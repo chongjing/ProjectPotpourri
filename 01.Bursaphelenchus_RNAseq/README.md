@@ -4,7 +4,6 @@ This project is to generate expression counts from Bursaphelenchus xylopilus tra
 
 ### 1. Reference
 
-For this specific project, we use concatenated genomes of host and nematode as reference.
 
 ```bash
 cd /data/pathology/cxia/projects/0.ref/11.Bursaphelenchus_xylophilus
