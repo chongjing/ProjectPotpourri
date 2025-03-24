@@ -91,7 +91,9 @@ for i in {029450..029457} {141203..141222}; do
 
     # Get expression counts
     /data/pathology/program/Miniforge3/bin/htseq-count --type transcript --counts_output 3.sorted.bam.count.tsv --nprocesses 32 --max-reads-in-buffer 1000000 ${sample_name}Aligned.sortedByCoord.out.bam /data/pathology/cxia/projects/0.ref/11.Bursaphelenchus_xylophilus/bursaphelenchus_xylophilus.PRJEA64437.WBPS19.annotations.gtf
-
+    # Get expression FPKM TPM
+    /data/pathology/program/stringtie-3.0.0.Linux_x86_64/stringtie -p 32 -G /data/pathology/cxia/projects/0.ref/11.Bursaphelenchus_xylophilus/bursaphelenchus_xylophilus.PRJEA64437.WBPS19.annotations.gtf -e -B -A 4.sorted.FPKM.tsv ${sample_name}Aligned.sortedByCoord.out.bam
+    
    cd "${output_dir}"
 
    echo "${sample_name} finished"
