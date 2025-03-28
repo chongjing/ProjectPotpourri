@@ -4,12 +4,13 @@ This project is to generate expression counts from Bursaphelenchus xylopilus tra
 
 ### 1. Reference
 
-
+#### 1.1 Genome
 ```bash
 cd /data/pathology/cxia/projects/0.ref/11.Bursaphelenchus_xylophilus
 
 # genome
 wget https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/bursaphelenchus_xylophilus/PRJEA64437/bursaphelenchus_xylophilus.PRJEA64437.WBPS19.genomic.fa.gz
+wget https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/bursaphelenchus_xylophilus/PRJEA64437/bursaphelenchus_xylophilus.PRJEA64437.WBPS19.protein.fa.gz
 # annotation
 wget https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/species/bursaphelenchus_xylophilus/PRJEA64437/bursaphelenchus_xylophilus.PRJEA64437.WBPS19.annotations.gff3.gz
 
@@ -23,6 +24,18 @@ wget https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/WBPS19/speci
   --sjdbOverhang 99
 
 /data/pathology/program/braker3/braker3.0.8/opt/ETP/tools/gffread bursaphelenchus_xylophilus.PRJEA64437.WBPS19.annotations.gff3 -T -F -o bursaphelenchus_xylophilus.PRJEA64437.WBPS19.annotations.gtf
+```
+
+#### 1.2 Annotation
+```bash
+# SignalP 6.0
+nohup /data/pathology/program/Miniforge3/envs/python3.7.12/bin/signalp6 --fastafile bursaphelenchus_xylophilus.PRJEA64437.WBPS19.protein.fa --output_dir ./signalp  --format all --organism eukarya --mode slow --write_procs 16 --model_dir /data/pathology/program/SignalP/signalp6_slow_sequential/signalp-6-package/models/ 1>01.signalp.log 2>&1 &
+
+# DeepTMHMM
+nohup /data/pathology/program/Miniforge3/envs/python3.7.12/bin/biolib run --local 'DTU/DeepTMHMM:1.0.24' --fasta bursaphelenchus_xylophilus.PRJEA64437.WBPS19.protein.fa > DeepTMHMM 1>02.DeepTMHMM.log 2>&1 &
+
+# TMHMM2.0
+/data/pathology/program/tmhmm-2.0c/bin/tmhmm bursaphelenchus_xylophilus.PRJEA64437.WBPS19.protein.fa > TMHMM2
 ```
 
 ### 2. Data
