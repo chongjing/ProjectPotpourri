@@ -39,25 +39,7 @@ nohup /data/pathology/program/Miniforge3/envs/python3.7.12/bin/biolib run --loca
 ```
 
 ### 2. Data
-2.1 Data Download
-```bash
-for i in {029450..029457} {141203..141222}; do
-        echo "Processing DRR${i} "
-        /data/pathology/cxia/program/SRAToolkit/sratoolkit.3.0.10-ubuntu64/bin/prefetch DRR${i} && /data/pathology/cxia/program/SRAToolkit/sratoolkit.3.0.10-ubuntu64/bin/fastq-dump --split-files --gzip DRR${i} && rm -rf ./DRR${i}
-        output_fwd_paired="DRR${i}_1P.fq.gz"
-        output_fwd_unpaired="DRR${i}_1U.fq.gz"
-        output_rev_paired="DRR${i}_2P.fq.gz"
-        output_rev_unpaired="DRR${i}_2U.fq.gz"
-        java -jar /data/pathology/program/Trimmomatic/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 32 -summary "DRR${i}.summary" "DRR${i}_1.fastq.gz" "DRR${i}_2.fastq.gz" \
-        "$output_fwd_paired" "$output_fwd_unpaired" "$output_rev_paired" "$output_rev_unpaired" \
-        LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:60
-        rm -rf DRR${i}_1.fastq.gz DRR${i}_2.fastq.gz
-        echo "Done DRR${i}"
 
-done
-```
-
-2.2 Trimmomatic
 ```bash
 cd /data/pathology/cxia/projects/Sebastian/06.Bursaphelenchus_xylophilus/01.data/
 
@@ -77,7 +59,7 @@ for i in {029450..029457} {141203..141222}; do
 done
 ```
 
-### 3. Aligment
+### 3. Alignment
 
 ```bash
 #!/bin/bash
