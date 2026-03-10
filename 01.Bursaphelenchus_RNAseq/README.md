@@ -376,4 +376,4 @@ main_plot
 dev.off()
 ```
 GO Enrichment plot of Activated BXY_0795900:
-<img src="https://github.com/chongjing/ProjectPotpourri/tree/main/01.Bursaphelenchus_RNAseq/GO_enrichment/2_TFs/03.Activated_BXY_0795900.GO_enrich.padj_0.05.jpeg" alt="Image 1" width="600"/>
+<img src="https://github.com/chongjing/ProjectPotpourri/blob/main/01.Bursaphelenchus_RNAseq/GO_enrichment/2_TFs/03.Activated_BXY_0795900.GO_enrich.padj_0.05.jpeg" alt="Image 1" width="600"/>
