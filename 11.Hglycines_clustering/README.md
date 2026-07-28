@@ -1,4 +1,4 @@
-# 11. H. glycines gene-centred VST expression clustering (Mfuzz, k=30)
+# *H. glycines* gene-centred VST expression clustering (Mfuzz, k=30)
 
 <!-- GitHub renders tracked images from relative paths -->
 
@@ -15,8 +15,8 @@ Soft-clustering of **14,862 *Heterodera glycines* genes** by VST-normalised expr
 | Condition | Description | Replicates |
 |-----------|-------------|------------|
 | E | Eggs | 3 |
-| pJ2 | Pre-parasitic J2 | 3 |
-| ppJ2 | Parasitic J2 | 3 |
+| ppJ2 | Pre-parasitic J2 | 3 |
+| pJ2 | Parasitic J2 | 3 |
 | J3 | J3 | 3 |
 | J4 | J4 | 3 |
 | RF | Reproductive Female | 3 |
