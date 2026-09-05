@@ -1,0 +1,7 @@
+*.tiff
+*.svg
+**/cache/
+**/_pre_fix/
+*.log
+__pycache__/
+.xdg/
