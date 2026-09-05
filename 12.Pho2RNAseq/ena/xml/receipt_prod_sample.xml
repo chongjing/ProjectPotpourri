@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="receipt.xsl"?>
+<RECEIPT receiptDate="2026-09-05T10:51:00.531+01:00" submissionFile="submission_samples.xml" success="true">
+     <SAMPLE accession="ERS31241328" alias="Saskia_r2310_1" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420480" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241329" alias="Saskia_r2310_2" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420481" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241330" alias="Saskia_r2310_3" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420482" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241331" alias="Saskia_r2310_4" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420483" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241332" alias="Saskia_r2310_5" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420484" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241333" alias="Saskia_r2310_6" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420485" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241334" alias="Saskia_r2310_7" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420486" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241335" alias="Saskia_r2310_8" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420487" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241336" alias="Saskia_r2310_9" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420488" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241337" alias="Saskia_r2310_10" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420489" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241338" alias="Saskia_r2310_11" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420490" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241339" alias="Saskia_r2310_12" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420491" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241340" alias="Saskia_r2310_13" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420492" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241341" alias="Saskia_r2310_14" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420493" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241342" alias="Saskia_r2310_15" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420494" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241343" alias="Saskia_r2310_16" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420495" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241344" alias="Saskia_r2310_17" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420496" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241345" alias="Saskia_r2310_18" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420497" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241346" alias="Saskia_r2310_19" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420498" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241347" alias="Saskia_r2310_20" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420499" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241348" alias="Saskia_r2310_21" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420500" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241349" alias="Saskia_r2310_22" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420501" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241350" alias="Saskia_r2310_23" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420502" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241351" alias="Saskia_r2310_24" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420503" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241352" alias="Saskia_r2310_25" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420504" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241353" alias="Saskia_r2310_26" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420505" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241354" alias="Saskia_r2310_27" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420506" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241355" alias="Saskia_r2310_28" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420507" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241356" alias="Saskia_r2310_29" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420508" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241357" alias="Saskia_r2310_30" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420509" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241358" alias="Saskia_r2310_31" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420510" type="biosample"/>
+     </SAMPLE>
+     <SAMPLE accession="ERS31241359" alias="Saskia_r2310_32" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA123420511" type="biosample"/>
+     </SAMPLE>
+     <SUBMISSION accession="ERA36946315" alias="submission_samples"/>
+     <MESSAGES>
+          <INFO>All objects in this submission are set to private status (HOLD).</INFO>
+     </MESSAGES>
+     <ACTIONS>ADD</ACTIONS>
+     <ACTIONS>HOLD</ACTIONS>
+</RECEIPT>

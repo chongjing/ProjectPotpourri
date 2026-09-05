@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="receipt.xsl"?>
+<RECEIPT receiptDate="2026-09-05T10:50:58.799+01:00" submissionFile="submission_study.xml" success="true">
+     <PROJECT accession="PRJEB125245" alias="Saskia_PHO2_AM_RNAseq" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="ERP204980" type="study"/>
+     </PROJECT>
+     <SUBMISSION accession="ERA36946314" alias="submission_study"/>
+     <MESSAGES>
+          <INFO>All objects in this submission are set to private status (HOLD).</INFO>
+     </MESSAGES>
+     <ACTIONS>ADD</ACTIONS>
+     <ACTIONS>HOLD</ACTIONS>
+</RECEIPT>

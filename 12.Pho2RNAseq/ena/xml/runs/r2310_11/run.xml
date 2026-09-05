@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RUN_SET>
+  <RUN alias="webin-reads-r2310_11">
+    <TITLE>Raw reads: r2310_11</TITLE>
+    <EXPERIMENT_REF refname="webin-reads-r2310_11"/>
+    <DATA_BLOCK>
+      <FILES>
+        <FILE filename="webin-cli/reads/r2310_11/r2310_11_EKRN230074698-1A_HWT7HDSX7_L2_1.fq.gz" filetype="fastq" checksum_method="MD5" checksum="46419f928058183b73f471a5e1ee775a"/>
+        <FILE filename="webin-cli/reads/r2310_11/r2310_11_EKRN230074698-1A_HWT7HDSX7_L2_2.fq.gz" filetype="fastq" checksum_method="MD5" checksum="aba130287401bff856d43bd4bcb46b70"/>
+      </FILES>
+    </DATA_BLOCK>
+  </RUN>
+</RUN_SET>

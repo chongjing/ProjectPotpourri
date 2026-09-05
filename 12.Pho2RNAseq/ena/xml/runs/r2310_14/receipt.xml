@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="receipt.xsl"?>
+<RECEIPT receiptDate="2026-09-05T12:14:56.007+01:00" submissionFile="submission.xml" success="true">
+     <EXPERIMENT accession="ERX17188153" alias="webin-reads-r2310_14" status="PRIVATE"/>
+     <RUN accession="ERR17796173" alias="webin-reads-r2310_14" status="PRIVATE"/>
+     <SUBMISSION accession="ERA36946326" alias="submit-reads-r2310_14"/>
+     <MESSAGES/>
+     <ACTIONS>ADD</ACTIONS>
+</RECEIPT>

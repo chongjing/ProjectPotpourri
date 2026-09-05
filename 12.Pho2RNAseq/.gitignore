@@ -1,0 +1,13 @@
+# Sequencing data stay on HPC / ENA — never commit
+*.fq.gz
+*.fastq.gz
+*.bam
+*.bam.bai
+*.bai
+*.sam
+*.cram
+
+# Local upload logs
+upload_slurm.o
+upload_slurm.e
+upload_fastq.log

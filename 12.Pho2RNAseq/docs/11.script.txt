@@ -1,0 +1,1033 @@
+## Dr. Jeongmin
+
+1.Datamining
+
+- Saskia -Filtering AM symbiosis transcriptome data in rice to identify small, secreted peptide candidates 
+
+- Nikoline will use a published transcriptome dataset, therefore it is ready to go.
+
+
+
+2.Rice RNAseq analysis
+
+Saskia submitted her RNAseq before Christmas and we expect to receive them in January. It will be great if he can train Saskia.
+
+
+
+We will have two additional rice RNAseq to submit in two months. The same pipeline developed in Saskia’s project can be used.
+
+
+
+## Saskia_Project
+
+![f9671140a94d87716e48283e033e93e](C:\Users\cx264\OneDrive - University of Cambridge\2024Spring\CSC\Jeongmin\1.Saskia\ExperimentDesign.jpg)
+
+### 0.data
+
+#### 0.1.reference
+
+The complete rice genome of Oryza sativa (Nipponbare) with annotation was downloaded from http://www.ricesuperpir.com.
+
+```
+cd /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare
+wget http://www.ricesuperpir.com/uploads/common/genome_sequence/NIP-T2T.fa.gz
+wget http://www.ricesuperpir.com/uploads/common/gene_annotation/NIP-T2T.gff3.gz
+
+#generate CDS and proteins from fasta and gff3
+/rds/project/rds-FTKWLWDeHys/programs/gffread/gffread-0.12.7.Linux_x86_64/gffread -x NIP-T2T_CDS.fasta -g NIP-T2T.fa NIP-T2T.gff3
+/rds/project/rds-FTKWLWDeHys/programs/gffread/gffread-0.12.7.Linux_x86_64/gffread -y NIP-T2T_aa.fasta -g NIP-T2T.fa NIP-T2T.gff3
+
+```
+
+For GO and KEGG enrichment analyses, we need to have GO and KEGG term for each protein. So we annotated the NIP-T2T genome first. For GO terms, interproscan v5.66 was used. For kofam analysis, kofam_scan v1.3.0 was used.
+
+```
+# annotate proteins with GO and KEGG terms, usiing interproscan 5.66
+export JAVA_HOME=/rds/project/rds-FTKWLWDeHys/programs/java/jdk-11.0.22+7/ && export PATH=$JAVA_HOME/bin:$PATH
+/rds/project/rds-FTKWLWDeHys/programs/InterProScan/interproscan-5.66-98.0/interproscan.sh -i NIP-T2T_aa.fasta -f tsv -appl Pfam --goterms -pa --iprlookup --cpu 2
+# format GO list for TBtools
+python /rds/project/rds-FTKWLWDeHys/programs/in-house/extract_GO_terms_from_interproscan_output.py NIP-T2T_aa.fasta.tsv NIP-T2T_aa.GO.list
+sed -i -e 's/(InterPro)//g' -e 's/|/,/g' NIP-T2T_aa.GO.list
+
+## kegg terms
+/rds/project/rds-FTKWLWDeHys/programs/kofamScan/kofam_scan-1.3.0/exec_annotation -o NIP-T2T_aa.fasta.kofam_scan.txt --e-value=0.01 NIP-T2T_aa.fasta
+
+```
+
+
+
+#### 0.2.data
+
+```
+cd /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/1.data
+wget https://objectstorage.uk-london-1.oraclecloud.com/p/38zXgea-da76ILan3OfL9N9r0oaCGGq5SUEn2hnQS6BmE-mkH6YZ0kpJMwiIPQns/n/cnyr09qj8zbo/b/england-data/o/out/CP2023083000041/X204SC23091440-Z01-F002/X204SC23091440-Z01-F002_01.tar
+wget https://objectstorage.uk-london-1.oraclecloud.com/p/38zXgea-da76ILan3OfL9N9r0oaCGGq5SUEn2hnQS6BmE-mkH6YZ0kpJMwiIPQns/n/cnyr09qj8zbo/b/england-data/o/out/CP2023083000041/X204SC23091440-Z01-F002/X204SC23091440-Z01-F002_02.tar
+```
+
+#### 0.3.Trim-20240123
+
+Raw reads were filtered and trimmed to get high quality reads using Trimmomatic (v0.39). Briefly, the bases with quality less than 20 at the start or end of a read were cut off, and reads with length shorter than 60bp were dropped.
+
+Since there are so many samples, I used a `for loop` to do trimmomatic.
+
+```
+#!/bin/bash
+
+# we are using trimmomatic.jar from /usr/local/software/trimmomatic/0.39/trimmomatic-0.39.jar
+
+input_dir="/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/1.data/X204SC23091440-Z01-F002_02/01.RawData/"
+output_dir="/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/1.data/X204SC23091440-Z01-F002_02/02.CleanData/"
+
+# run trimmomatic iterate through each sample
+for fq1 in "$input_dir"/*/*_1.fq.gz; do
+    fq2="${fq1/_1.fq.gz/_2.fq.gz}" # get the corresponding paired-end file
+
+    # extract sample name
+    sample_name=$(basename "$fq1" | cut -d'_' -f1-2)
+
+    # set output files
+    output_fwd_paired="${sample_name}_1P.fq.gz"
+    output_fwd_unpaired="${sample_name}_1U.fq.gz"
+    output_rev_paired="${sample_name}_2P.fq.gz"
+    output_rev_unpaired="${sample_name}_2U.fq.gz"
+
+    # Run Trimmomatic
+    echo "processing ${sample_name}"
+    cd $output_dir
+    mkdir ${sample_name} && cd ${sample_name}
+    java -jar /usr/local/software/trimmomatic/0.39/trimmomatic-0.39.jar PE -threads 4 -summary ${sample_name}.summary "$fq1" "$fq2" \
+        "$output_fwd_paired" "$output_fwd_unpaired" "$output_rev_paired" "$output_rev_unpaired" \
+        LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:60
+    echo "${sample_name} finished"
+done
+
+echo "Trimmomatic process completed."
+```
+
+### 1.mapping
+
+The complete rice genome of Oryza sativa (Nipponbare) with annotation (from http://www.ricesuperpir.com) was used as reference genome. Novoalign (v4.03.08) was used to map high-quality reads to the reference genome.
+
+```
+#index reference genome
+/rds/user/cx264/hpc-work/program/novocraft/novoindex NIP-T2T.index NIP-T2T.fa
+
+```
+
+
+
+```
+#!/bin/bash
+
+# Set working and input directories
+working_dir="/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/"
+input_dir="/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/1.data/X204SC23091440-Z01-F002_01/02.CleanData/"
+
+# Iterate over sample numbers 4 to 9
+for i in {4..9}; do
+    sample_name="r2310_$i"
+    fq1="$input_dir/${sample_name}/${sample_name}_1P.fq.gz"
+    fq2="$input_dir/${sample_name}/${sample_name}_2P.fq.gz"
+    echo "Processing Sample ${sample_name}"
+
+    # Change to the working directory
+    cd "${working_dir}"
+
+    # Create a directory for the sample and move into it
+    mkdir -p "${sample_name}" && cd "${sample_name}"
+
+    # Map with novoalign
+    /rds/user/cx264/hpc-work/program/novocraft/novoalign -d /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T.index -f "${fq1}" "${fq2}" -o BAM "@RG\tID:${sample_name}\tSM:${sample_name}\tPL:illumina" -i PE 250,50 -k > 1.raw.bam
+
+    # Create a tmp directory for novosort
+    mkdir -p tmp
+
+    # Sort and process with novosort
+    /rds/user/cx264/hpc-work/program/novocraft/novosort -m 32G --threads 16 --tmpdir ./tmp --output 2.sorted.bam --index --bai --markDuplicates --stats 2.duplicate.summary 1.raw.bam
+
+    # Run mapinsights bamqc
+    mapinsights bamqc -r /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T.fa -i 2.sorted.bam -o ./
+done
+
+```
+
+An in-house python script was used to summarize mapping results.`for i in {1..32}; do echo r2310_$i; python quality.py r2310_$i/Overall_mapping_summary.log; done`. (input was the log from mapinsights)
+
+```
+import re
+import sys
+
+def extract_info(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+
+    # Extracting relevant information using regular expressions
+    total_reads = int(re.search(r'Total number of reads = (\d+)', content).group(1))
+    mapped_reads = int(re.search(r'Total number of mapped reads = (\d+)', content).group(1))
+    supplementary_alignments = int(re.search(r'Supplementary-alignments = (\d+)', content).group(1))
+    mismatch_rate = float(re.search(r'Mismatch rate = (\d+\.\d+)', content).group(1))
+    mean_depth_of_coverage = float(re.search(r'Mean depth of coverages = (\d+\.\d+)', content).group(1))
+    mean_mapping_quality = float(re.search(r'Mean mapping quality = (\d+\.\d+)', content).group(1))
+
+    return total_reads, mapped_reads, supplementary_alignments, mismatch_rate, mean_depth_of_coverage, mean_mapping_quality
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: python mypython.py input.txt")
+        sys.exit(1)
+
+    input_file_path = sys.argv[1]
+
+    results = extract_info(input_file_path)
+
+    # Corrected ratio calculation for Python 2
+    ratio_mapped_reads = float(results[1] - results[2]) / (results[0] - results[2])
+
+    print("\t".join(map(str, [
+        results[1] - results[2],
+        ratio_mapped_reads,
+        results[3],
+        results[4],
+        results[5]
+    ])))
+
+if __name__ == "__main__":
+    main()
+```
+
+HTseq-count was used to extract expression counts for each sample.
+
+```
+cd /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/
+
+# Set working and input directories
+working_dir="/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/"
+input_dir="/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/1.data/X204SC23091440-Z01-F002_02/02.CleanData/"
+
+# Iterate over sample numbers 1 to 32
+for i in {25..32}; do
+    sample_name="r2310_$i"
+    echo "Processing Sample ${sample_name}"
+
+    # Change to the working directory
+    cd "${working_dir}" && cd ${sample_name}/
+
+    # HTseq-count
+    /rds/user/cx264/hpc-work/program/miniforge3/envs/python3.8/bin/htseq-count --type transcript --counts_output 3.sorted.bam.count.tsv --nprocesses 16 --max-reads-in-buffer 1000000 2.sorted.bam /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T.gtf
+
+done
+```
+
+
+
+### 2.clustering
+
+```
+cd 
+multiBamSummary BED-file --BED /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T.gtf --bamfiles /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_1/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_2/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_3/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_4/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_5/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_6/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_7/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_8/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_9/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_10/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_11/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_12/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_13/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_14/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_15/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_16/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_17/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_18/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_19/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_20/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_21/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_22/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_23/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_24/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_25/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_26/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_27/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_28/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_29/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_30/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_31/2.sorted.bam /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_32/2.sorted.bam --outFileName 1.correlation.matrix --metagene -p max --outRawCounts 2.rawCounts.tab --verbose --labels r2310_1 r2310_2 r2310_3 r2310_4 r2310_5 r2310_6 r2310_7 r2310_8 r2310_9 r2310_10 r2310_11 r2310_12 r2310_13 r2310_14 r2310_15 r2310_16 r2310_17 r2310_18 r2310_19 r2310_20 r2310_21 r2310_22 r2310_23 r2310_24 r2310_25 r2310_26 r2310_27 r2310_28 r2310_29 r2310_30 r2310_31 r2310_32
+
+plotCorrelation --corData 1.correlation.matrix --corMethod spearman --whatToPlot heatmap --plotFile 3.spearman.heatmap1.pdf --labels r2310_1 r2310_2 r2310_3 r2310_4 r2310_5 r2310_6 r2310_7 r2310_8 r2310_9 r2310_10 r2310_11 r2310_12 r2310_13 r2310_14 r2310_15 r2310_16 r2310_17 r2310_18 r2310_19 r2310_20 r2310_21 r2310_22 r2310_23 r2310_24 r2310_25 r2310_26 r2310_27 r2310_28 r2310_29 r2310_30 r2310_31 r2310_32 --colorMap hot_r --plotNumbers --skipZeros --removeOutliers --zMin 0.6
+```
+
+2.1.ClusteringMarker
+
+```
+cd /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/3.clustering/4.marker
+#extract expression counts for each sample
+while read -r line _; do awk -v line="AGIS_$line" '$1==line {print $2}' ../../2.mapping/r2310_32/3.sorted.bam.count.tsv; done < 1.gene.list
+
+setwd("C:/Users/cx264/OneDrive - University of Cambridge/2024Spring/CSC/Jeongmin/1.Saskia/")
+library(RColorBrewer)
+myheatcolors2 <- colorRampPalette(colors=c("blue","white","red"))(100)
+rnaseq <- read.csv("MarkerExpression.csv", sep = ",", header = T)
+clustRows <- hclust(as.dist(1-cor(t(rnaseq[,-1]), method="pearson")), method="complete")
+clustColumns <- hclust(as.dist(1-cor(rnaseq[,-1],method="spearman")), method="complete")
+module.assign <- cutree(clustRows, k=2)
+module.color <- rainbow(length(unique(module.assign)), start=0.1, end=0.9)
+module.color <- module.color[as.vector(module.assign)]
+row_labels <- rnaseq[,1]
+heatmap.2(data.matrix(rnaseq[,-1]), Colv=as.dendrogram(clustColumns),
+                      Rowv=as.dendrogram(clustRows),
+                      RowSideColors=module.color,
+                      col=myheatcolors2, scale='row',
+                      density.info="none", trace="none",
+                      cexRow=1, cexCol=1, margins=c(8,20), keysize=1, srtCol=45, main="Marker gene-RNAseq expression", labRow = row_labels)
+```
+
+```
+row_labels <- pcr[,1]
+heatmap.2(data.matrix(pcr[,-1]), Rowv=as.dendrogram(clustRows),
+          Colv=as.dendrogram(clustColumns),
+          RowSideColors=module.color,
+          col=myheatcolors2, scale='row',
+          density.info="none", trace="none",
+          cexRow=1, cexCol=1, margins=c(8,20), keysize=1, srtCol=45, main="Marker gene-qPCT expression", labRow = row_labels)
+```
+
+Conclusion
+
+The clustering results are all not good. Now, continue to do pairwise comparison to identify differentially expression genes, then select these genes for clustering.
+
+### 3.DE_analysis
+
+Install
+
+```
+R #R3.6.0
+.libPaths("/rds/project/rds-FTKWLWDeHys/programs/R/R-3.6.0/lib/")
+chooseCRANmirror(graphics=F) #disable graphical selection CRAN mirrors
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+install.packages("/rds/project/rds-FTKWLWDeHys/programs/R/R-3.6.0/lib/locfit_1.5-9.4.tar.gz",repos = NULL, type="source") #install locfit from local source
+BiocManager::install("ggplot2")
+library("ggplot2")
+library(edgeR)
+library(stringr)
+library(statmod)
+library(RColorBrewer)
+library(gplots)
+library(EnhancedVolcano)
+
+setwd("/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia//4.DEanalysis/01.WTLP-myc_vs_mock/")
+my_count_matrix <- read.csv("01.raw.count.WTLP-myc_vs_mock.tab", sep = "\t", header=T)
+#There are two experimental factors, treatment (Infect vs CK) and the time
+that each replicate was conducted:
+group <- c(1,1,1,1,2,2,2,2)
+Time <- factor(c("1","2","3","4","1","2","3","4"))
+y <- DGEList(counts=my_count_matrix[,2:9], group=group,genes=my_count_matrix[,1])
+##Filtering
+keep <- filterByExpr(y)
+table(keep)
+y <- y[keep, , keep.lib.sizes=FALSE]
+dim(y)
+#[1]24218	8
+##TMM normalization
+y <- calcNormFactors(y)
+head(y)
+
+#plot clustering of treatment and control
+pdf("1.1.LRT.MDS.pdf")
+plotMDS(y, col=rep(1:2, each=4))
+dev.off()
+
+##Design matrix
+design <- model.matrix(~Time+group)
+rownames(design) <- colnames(y)
+design
+
+##Dispersion estimation
+y <- estimateDisp(y, design, robust=TRUE)
+y$common.dispersion
+[1] 0.1561381
+pdf("1.2.LRT.dispersion.BCV.pdf")
+plotBCV(y)
+dev.off()
+```
+
+
+
+```
+fit <- glmQLFit(y, design, robust=TRUE)
+pdf("1.3.LRT.QLdispersion.pdf")
+plotQLDisp(fit)
+dev.off()
+```
+
+
+
+```
+##Differential Expression
+#First we check whether there was a genuine need to adjust for the
+experimental times. Bellow only 5 significance.
+qlf <- glmQLFTest(fit, coef=2:3)
+topTags(qlf)
+FDR <- p.adjust(qlf$table$PValue, method="BH")
+sum(FDR < 0.05)
+##[1] 0
+#Now conduct QL F-tests for the pathogen effect and show the top genes.
+qlf <- glmQLFTest(fit)
+topTags(qlf)
+
+Coefficient:  group
+                 genes      logFC   logCPM         F       PValue          FDR
+18677 AGIS_Os04g010400 -13.978574 6.918830 1472.3012 6.778781e-13 1.612604e-08
+9499  AGIS_Os02g029110 -14.444310 8.069978 1298.0921 1.331740e-12 1.612604e-08
+35694 AGIS_Os07g033860 -12.881246 5.862609 1184.9236 2.171063e-12 1.639211e-08
+29356 AGIS_Os06g017930 -13.666948 7.352048 1110.4861 3.248103e-12 1.639211e-08
+33601 AGIS_Os07g012920  -7.066788 6.121751 1070.0652 3.747384e-12 1.639211e-08
+41019 AGIS_Os08g042120  -6.085235 6.380551 1042.1920 4.315767e-12 1.639211e-08
+48306 AGIS_Os10g028380 -12.380681 6.533597 1018.1451 5.162082e-12 1.639211e-08
+12014 AGIS_Os03g000160  -8.429949 7.229539  998.9109 5.414853e-12 1.639211e-08
+15786 AGIS_Os03g037880  -8.017730 9.527095  878.1124 1.078276e-11 2.901520e-08
+45647 AGIS_Os10g001780  -6.352648 6.532845  859.1413 1.211657e-11 2.934391e-08
+
+cpm(y)[rownames(topTags(qlf)),]
+summary(decideTests(qlf,lfc=1))
+#       group
+#Down    1199
+#NotSig 21853
+#Up      1166
+
+#We can plot all the logFCs against average count size, highlighting the DE genes:
+pdf("1.3.QLF.FC_Count.pdf")
+plotMD(qlf)
+abline(h=c(-1, 1), col="blue")
+dev.off()
+```
+
+
+
+```
+##To save results with change information, FDR
+allTags2 <- topTags(qlf, n = nrow(qlf$genes), adjust.method = "BH", sort.by = "none", p.value = 1)
+DEG_glmQLF <- as.data.frame(allTags2)
+k1 <- (DEG_glmQLF$FDR < 0.05) & (DEG_glmQLF$logFC < -1)
+k2 <- (DEG_glmQLF$FDR < 0.05) & (DEG_glmQLF$logFC > 1)
+DEG_glmQLF$change <- ifelse(k1, "DOWN", ifelse(k2, "UP", "Not_significant")) #differential expression was defined as FDR < 0.05 and fold change >2.
+table(DEG_glmQLF$change)
+# DOWN Not_significant UP
+# 1199 21853 1166
+DEG_glmQLF$CPM <- cpm(y)[rownames(qlf),]
+write.csv(DEG_glmQLF, "1.4.QLF.DE.results.FINAL.csv", quote = F)
+```
+
+
+
+#### 01.WT-LP-myc_vs_mock
+
+```
+cd /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/4.DEanalysis/01.WTLP-myc_vs_mock
+paste -d"\t" /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_1/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_2/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_3/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_4/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_5/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_6/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_7/3.sorted.bam.count.tsv /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/2.mapping/r2310_8/3.sorted.bam.count.tsv | awk '{print $1"\t"$2"\t"$4"\t"$6"\t"$8"\t"$10"\t"$12"\t"$14"\t"$16}' > 01.raw.count.WTLP-myc_vs_mock.tab
+
+```
+
+Final script for DE_analysis
+
+```
+.libPaths("/rds/project/rds-FTKWLWDeHys/programs/R/R-3.6.0/lib/")
+setwd("/rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia//4.DEanalysis/01.WTLP-myc_vs_mock/")
+library(EnhancedVolcano)
+library(gplots)
+library(RColorBrewer)
+library("ggplot2")
+library(edgeR)
+library(stringr)
+library(statmod)
+my_count_matrix <- read.csv("01.raw.count.WTLP-myc_vs_mock.tab", sep = "\t", header=T)
+head(my_count_matrix)
+group <- c(1,1,1,1,2,2,2,2) ##first columns (1) are control, (2 is treatment)
+Time <- factor(c("1","2","3","4","1","2","3","4"))
+y <- DGEList(counts=my_count_matrix[,2:9], group=group,genes=my_count_matrix[,1])
+keep <- filterByExpr(y)
+table(keep)
+y <- y[keep, , keep.lib.sizes=FALSE]
+dim(y)
+y <- calcNormFactors(y)
+head(y)
+pdf("1.1.LRT.MDS.pdf")
+plotMDS(y, col=rep(1:2, each=4))
+dev.off()
+design <- model.matrix(~Time+group)
+rownames(design) <- colnames(y)
+design
+y <- estimateDisp(y, design, robust=TRUE)
+y$common.dispersion
+# [1] 0.1561381
+pdf("1.2.LRT.dispersion.BCV.pdf")
+plotBCV(y)
+dev.off()
+fit <- glmQLFit(y, design, robust=TRUE)
+pdf("1.3.LRT.QLdispersion.pdf")
+plotQLDisp(fit)
+dev.off()
+qlf <- glmQLFTest(fit, coef=2:3)
+topTags(qlf)
+FDR <- p.adjust(qlf$table$PValue, method="BH")
+sum(FDR < 0.05)
+qlf <- glmQLFTest(fit)
+topTags(qlf)
+cpm(y)[rownames(topTags(qlf)),]
+summary(decideTests(qlf,lfc=1))
+#       group
+#Down    1166
+#NotSig 21853
+#Up      1199
+
+pdf("1.3.QLF.FC_Count.pdf")
+plotMD(qlf)
+abline(h=c(-1, 1), col="blue")
+dev.off()
+allTags2 <- topTags(qlf, n = nrow(qlf$genes), adjust.method = "BH", sort.by = "none", p.value = 1)
+DEG_glmQLF <- as.data.frame(allTags2)
+k1 <- (DEG_glmQLF$FDR < 0.05) & (DEG_glmQLF$logFC < -1)
+k2 <- (DEG_glmQLF$FDR < 0.05) & (DEG_glmQLF$logFC > 1)
+DEG_glmQLF$change <- ifelse(k1, "DOWN", ifelse(k2, "UP", "Not_significant"))
+table(DEG_glmQLF$change)
+DEG_glmQLF$CPM <- cpm(y)[rownames(qlf),]
+write.csv(DEG_glmQLF, "1.4.QLF.DE.results.WTLP-myc_vs_mock.FINAL.csv", quote = F)
+
+#heatmap plot
+deseq_results <- read.csv("1.4.QLF.DE.results.WTLP-myc_vs_mock.FINAL.csv",sep=",", header = T)
+diffGenes <- deseq_results[deseq_results$FDR < 0.05,][,c(2,9,10,11,12,13,14,15,16)]
+clustRows <- hclust(as.dist(1-cor(t(diffGenes[,c(2,3,4,5,6,7,8,9)]),method="pearson")), method="complete")
+clustColumns <- hclust(as.dist(1-cor(diffGenes[,c(2,3,4,5,6,7,8,9)],method="spearman")), method="complete")
+module.assign <- cutree(clustRows, k=2)
+module.color <- rainbow(length(unique(module.assign)), start=0.1, end=0.9)
+module.color <- module.color[as.vector(module.assign)]
+myheatcolors1 <- bluered(75)
+pdf("1.5.QLF.DiffGene.WTLP-myc_vs_mock.heatmap.pdf")
+heatmap.2(data.matrix(diffGenes[,c(2,3,4,5,6,7,8,9)]),
+    Rowv=as.dendrogram(clustRows),
+    Colv=as.dendrogram(clustColumns),
+    RowSideColors=module.color,
+    col=myheatcolors1, scale='row', labRow=NA,
+    density.info="none", trace="none",
+    cexRow=1, cexCol=1, margins=c(8,20), keysize=1, srtCol=45)
+dev.off()
+png("1.5.QLF.DiffGene.WTLP-myc_vs_mock.heatmap.png",width = 636, height = 980)
+heatmap.2(data.matrix(diffGenes[,c(2,3,4,5,6,7,8,9)]),
+    Rowv=as.dendrogram(clustRows),
+    Colv=as.dendrogram(clustColumns),
+    RowSideColors=module.color,
+    col=myheatcolors1, scale='row', labRow=NA,
+    density.info="none", trace="none",
+    cexRow=1, cexCol=1, margins=c(8,20), keysize=0.5, srtCol=45)
+dev.off()
+
+#volcano plot
+pdf("1.6.QLF.DiffGene.WTLP-myc_vs_mock.volcano.pdf", 7, 7)
+EnhancedVolcano(deseq_results, lab = rownames(deseq_results), x = 'logFC', y = 'FDR', pCutoff = 10e-3, 
+    FCcutoff=1.0, ylim = c(0, 9), xlim = c(-15, 15), pointSize = 1.0, labSize = 0, 
+    colAlpha = 1, legendIconSize=2.0, legendLabSize = 10) 
+    + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) 
+dev.off()
+png("1.6.QLF.DiffGene.WTLP-myc_vs_mock.volcano.png", 800, 800)
+EnhancedVolcano(deseq_results, lab = rownames(deseq_results), x = 'logFC', y = 'FDR', pCutoff = 10e-3, 
+    FCcutoff=1.0, ylim = c(0, 9), xlim = c(-15, 15), pointSize = 1.0, labSize = 0, 
+    colAlpha = 1, legendIconSize=2.0, legendLabSize = 10) + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) 
+dev.off()
+q()
+```
+
+#select differentially Expressed genes for clustering 
+
+## GO enrichment
+cd /home/cx264/rds/hpc-work/project/2.Jeongmin/01.Saskia/4.DEanalysis.FDR_0.05/
+for folder in */; do
+    folder_name="${folder%/}"
+    cd $folder_name
+    awk -F"," '$8 == "UP" {print $2}' 1.5.QLF.DE.results.*.FINAL.csv | sed 's/AGIS_//g' > 2.1.$folder_name\.UP.list
+    awk -F"," '$8 == "DOWN" {print $2}' 1.5.QLF.DE.results.*.FINAL.csv | sed 's/AGIS_//g' > 2.1.$folder_name\.DOWN.list
+    awk -F"," '$8 == "Not_significant" {print $2}' 1.5.QLF.DE.results.*.FINAL.csv | sed 's/AGIS_//g' > 2.1.$folder_name\.Non-Sig.list
+
+    while read line; do awk -v line="$line" '$1 ~ line {print $0}' /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T_aa.GO.list >> 2.2.$folder_name\.UP-GO.list; done < 2.1.$folder_name\.UP.list
+    while read line; do awk -v line="$line" '$1 ~ line {print $0}' /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T_aa.GO.list >> 2.2.$folder_name\.DOWN-GO.list; done < 2.1.$folder_name\.DOWN.list
+    while read line; do awk -v line="$line" '$1 ~ line {print $0}' /rds/user/cx264/hpc-work/project/0.ref/1.Rice_Nipponbare/NIP-T2T_aa.GO.list >> 2.2.$folder_name\.Non-Sig-GO.list; done < 2.1.$folder_name\.Non-Sig.list
+    cd ../
+done
+
+##### Preparing Master Table - logFC and Pvalue, using my own laptop, 
+## merge two lists based on the gene identifiers. For each gene in the first list, you want to append the associated Gene Ontology (GO) terms from the second list, if they exist
+cd /mnt/c/Users/cx264/OneDrive - University of Cambridge/2024Spring/CSC/Jeongmin/1.Saskia/DE_analysis/10.LPmyc-WT_vs_pho2
+awk -F, '{print $2"\t"$3"\t"$6}' 1.4.QLF.DE.results.LPmyc-WT_vs_pho2.FINAL.csv > 2.1
+python3 ../0.extract_info_append.py ../03.gene_GO.txt 2.1 > 2.2
+
+##get MSU7 gene ID for AgriGO
+sed 's/\.mRNA.*//g' 2.3.01.WTLP-myc_vs_mock.UP-GO.list | sort -k1 -n | awk '!seen[$1]++' > 2.4.01.WTLP-myc_vs_mock.UP.list
+while read line; do awk -F"," -v line="$line" '$2 ~ line {print $17}' 1.5.QLF.DE.results.WTLP-myc_vs_mock.FINAL.csv >> 2.4.02.WTLP-myc_vs_mock.UP.MSU7.list; done < 2.4.01.WTLP-myc_vs_mock.UP.list
+# awk -F"," 'NR==FNR{seen[$1]; next} $2 in seen{print $17}' <(sed 's/\.mRNA.*//g' 2.3.02.pho2LP-myc_vs_mock.UP-GO.list | sort -k1 -n | awk '!seen[$1]++') 1.5.QLF.DE.results.pho2LP-myc_vs_mock.FINAL.csv >> 2.4.02.pho2LP-myc_vs_mock.UP.MSU7.list
+
+######Using stringtie to calculate FPKM
+/rds-d7/user/cx264/rds-csc_programmes-FTKWLWDeHys/programs/StringTie/stringtie/stringtie
+
+
+
+
+## Published_data
+	Treatment	Accession number
+	WT myc LP	SRX11085842 SRR14752296
+	WT myc LP	SRX11085841 SRR14752297
+	WT myc LP	SRX11085853 SRR14752285
+	WT mock LP	SRX11085847 SRR14752291
+	WT mock LP	SRX11085846 SRR14752292
+	WT mock LP	SRX11085845 SRR14752293
+		
+	WT myc LP	SRR11872350
+	WT myc LP	SRR11872351
+	WT myc LP	SRR11872352
+	WT mock LP	SRR11872353
+	WT mock LP	SRR11872354
+	WT mock LP	SRR11872355
+
+`for i in {50..55}; do echo SRR118723$i; /rds/user/cx264/hpc-work/program/sratoolkit.3.0.10-centos_linux64/bin/prefetch SRR118723$i && /rds/user/cx264/hpc-work/program/sratoolkit.3.0.10-centos_linux64/bin/fastq-dump --split-files --gzip SRR118723$i; done`
+
+## DE analysis of SRX dataset
+cd /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/4.DEanalysis.FDR_0.05/01.WTLP-myc_vs_mock_SRX
+paste -d"\t"  /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/2.mapping/2.SRR14752291_1.fastq.gz/3.sorted.bam.count.tsv /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/2.mapping/2.SRR14752292_1.fastq.gz/3.sorted.bam.count.tsv /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/2.mapping/2.SRR14752293_1.fastq.gz/3.sorted.bam.count.tsv /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/2.mapping/2.SRR14752296_1.fastq.gz/3.sorted.bam.count.tsv /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/2.mapping/2.SRR14752297_1.fastq.gz/3.sorted.bam.count.tsv /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/2.mapping/2.SRR14752285_1.fastq.gz/3.sorted.bam.count.tsv | awk '{print $1"\t"$2"\t"$4"\t"$6"\t"$8"\t"$10"\t"$12}' > 01.raw.count.WTLP-myc_vs_mock.tab
+
+
+## Re-Do Das et al using Salmon
+# transcriptome reference from Phytozome_v12, MSU_v7
+cd /home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v7_Phytozome_v12
+# building index
+grep "^>" Osativa_204_v7.0.softmasked.fa | sed 's/>//g' > decoys.txt
+cat Osativa_204_v7.0.transcript.fa Osativa_204_v7.0.softmasked.fa > Osativa_204_v7.0.gentrome.fa
+/rds/project/rds-FTKWLWDeHys/programs/mambaforge/bin/salmon index -t Osativa_204_v7.0.gentrome.fa -i Osativa_204_v7.0.gentrome.index --decoys decoys.txt -k 31
+
+/rds/project/rds-FTKWLWDeHys/programs/mambaforge/bin/salmon quant --libType A --index /home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v7_Phytozome_v12/Osativa_204_v7.0.gentrome.index -1 /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/1.data/2.SRR14752296_1.fastq.gz_1P.fq.gz -2 /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/1.data/2.SRR14752296_1.fastq.gz_2P.fq.gz --threads 16 --output 01.SRR14752296
+## after running all samples
+
+
+R
+#BiocManager::install("jsonlite")
+library("ggplot2")
+library(edgeR)
+library(stringr)
+library(statmod)
+library(RColorBrewer)
+library(gplots)
+library(EnhancedVolcano)
+library(tximport)
+library(readr)
+library(jsonlite)
+
+setwd("/home/cx264/rds/hpc-work/project/2.Jeongmin/01.Saskia/9.Salmon/01.WTLP-myc_vs_mock/")
+#import salmon results, get gene_level
+
+base_dir <- "/home/cx264/rds/hpc-work/project/2.Jeongmin/01.Saskia/9.Salmon/"
+sample_names <- c("r2310_1","r2310_2","r2310_3","r2310_4","r2310_5","r2310_6","r2310_7","r2310_8")
+files <- file.path(base_dir, sample_names, "quant.sf")
+tx2gene <- read.csv("/home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v7_Phytozome_v12/Osativa_204_v7.0.gene.tx2gene", header = TRUE)
+txi <- tximport(files, type = "salmon", tx2gene = tx2gene)
+group <- c(1,1,1,1,2,2,2,2) ##first columns (1) are control, (2 is treatment)
+Time <- factor(c("1","2","3","4","1","2","3","4"))
+y <- DGEList(counts=txi$counts, group=group)
+keep <- filterByExpr(y)
+table(keep)
+y <- y[keep, , keep.lib.sizes=FALSE]
+dim(y)
+y <- calcNormFactors(y)
+head(y)
+pdf("1.1.LRT.MDS.pdf")
+plotMDS(y, col=rep(1:2, each=4))
+dev.off()
+
+design <- model.matrix(~Time+group)
+rownames(design) <- colnames(y)
+design
+y <- estimateDisp(y, design, robust=TRUE)
+y$common.dispersion
+# [1] 0.1304489
+pdf("1.2.LRT.dispersion.BCV.pdf")
+plotBCV(y)
+dev.off()
+fit <- glmQLFit(y, design, robust=TRUE)
+pdf("1.3.LRT.QLdispersion.pdf")
+plotQLDisp(fit)
+dev.off()
+qlf <- glmQLFTest(fit, coef=2:3)
+topTags(qlf)
+FDR <- p.adjust(qlf$table$PValue, method="BH")
+sum(FDR < 0.05)
+qlf <- glmQLFTest(fit)
+topTags(qlf)
+cpm(y)[rownames(topTags(qlf)),]
+summary(decideTests(qlf,lfc=1))
+#       group
+#Down    1109
+#NotSig 20002
+#Up      1113
+
+pdf("1.3.QLF.FC_Count.pdf")
+plotMD(qlf)
+abline(h=c(-1, 1), col="blue")
+dev.off()
+
+allTags2 <- topTags(qlf, n = nrow(qlf$genes), adjust.method = "BH", sort.by = "none", p.value = 1)
+DEG_glmQLF <- as.data.frame(allTags2)
+k1 <- (DEG_glmQLF$PValue < 0.05) & (DEG_glmQLF$logFC < -1)
+k2 <- (DEG_glmQLF$PValue < 0.05) & (DEG_glmQLF$logFC > 1)
+DEG_glmQLF$change <- ifelse(k1, "DOWN", ifelse(k2, "UP", "Not_significant"))
+table(DEG_glmQLF$change)
+#           DOWN Not_significant              UP
+#           1558           19282            1384
+
+DEG_glmQLF$CPM <- cpm(y)[rownames(qlf),]
+write.csv(DEG_glmQLF, "1.4.QLF.DE.results.WTLP-myc_vs_mock.FINAL.csv", quote = F)
+
+#heatmap plot
+deseq_results <- read.csv("1.4.QLF.DE.results.WTLP-myc_vs_mock.FINAL.csv",sep=",", header = T)
+diffGenes <- deseq_results[deseq_results$FDR < 0.05,][,c(2,8,9,10,11,12,13,14,15)]
+clustRows <- hclust(as.dist(1-cor(t(diffGenes[,c(2,3,4,5,6,7,8,9)]),method="pearson")), method="complete")
+clustColumns <- hclust(as.dist(1-cor(diffGenes[,c(2,3,4,5,6,7,8,9)],method="spearman")), method="complete")
+module.assign <- cutree(clustRows, k=2)
+module.color <- rainbow(length(unique(module.assign)), start=0.1, end=0.9)
+module.color <- module.color[as.vector(module.assign)]
+myheatcolors1 <- bluered(75)
+
+pdf("1.5.QLF.DiffGene.WTLP-myc_vs_mock.heatmap.pdf")
+heatmap.2(data.matrix(diffGenes[,c(2,3,4,5,6,7,8,9)]),
+    Rowv=as.dendrogram(clustRows),
+    Colv=as.dendrogram(clustColumns),
+    RowSideColors=module.color,
+    col=myheatcolors1, scale='row', labRow=NA,
+    density.info="none", trace="none",
+    cexRow=1, cexCol=1, margins=c(8,20), keysize=1, srtCol=45)
+dev.off()
+png("1.5.QLF.DiffGene.WTLP-myc_vs_mock.heatmap.png",width = 636, height = 980)
+heatmap.2(data.matrix(diffGenes[,c(2,3,4,5,6,7,8,9)]),
+    Rowv=as.dendrogram(clustRows),
+    Colv=as.dendrogram(clustColumns),
+    RowSideColors=module.color,
+    col=myheatcolors1, scale='row', labRow=NA,
+    density.info="none", trace="none",
+    cexRow=1, cexCol=1, margins=c(8,20), keysize=0.5, srtCol=45)
+dev.off()
+
+#volcano plot
+pdf("1.6.QLF.DiffGene.WTLP-myc_vs_mock.volcano.pdf", 7, 7)
+EnhancedVolcano(deseq_results, lab = rownames(deseq_results), x = 'logFC', y = 'FDR', pCutoff = 10e-3, 
+    FCcutoff=1.0, ylim = c(0, 9), xlim = c(-15, 15), pointSize = 1.0, labSize = 0, 
+    colAlpha = 1, legendIconSize=2.0, legendLabSize = 10) 
+    + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) 
+dev.off()
+png("1.6.QLF.DiffGene.WTLP-myc_vs_mock.volcano.png", 800, 800)
+EnhancedVolcano(deseq_results, lab = rownames(deseq_results), x = 'logFC', y = 'FDR', pCutoff = 10e-3, 
+    FCcutoff=1.0, ylim = c(0, 9), xlim = c(-15, 15), pointSize = 1.0, labSize = 0, 
+    colAlpha = 1, legendIconSize=2.0, legendLabSize = 10) + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank()) 
+dev.off()
+q()
+
+
+
+############# using Salmon v0.7 and MSU_v7， 20240513
+cd /home/cx264/rds/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/6.Salmon.v0.7_MSUv7
+# build index, without decoys
+/home/cx264/rds/rds-csc_programmes-FTKWLWDeHys/programs/Salmon/SalmonBeta-0.7.0_linux_x86_64/bin/salmon index --transcripts /home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v7/all.cdna -i MSU_v7.0.cDNA.index --type quasi --threads 16
+
+# --geneMap, get aggregated gene-level abundance estimates
+for i in SRR14752296 SRR14752297 SRR14752285 SRR14752291 SRR14752292 SRR14752293; do
+    echo "processing $i"
+    /home/cx264/rds/rds-csc_programmes-FTKWLWDeHys/programs/Salmon/SalmonBeta-0.7.0_linux_x86_64/bin/salmon quant --libType A --index MSU_v7.0.cDNA.index -1 /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/1.data/2.${i}_1.fastq.gz_1P.fq.gz -2 /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/1.data/2.${i}_1.fastq.gz_2P.fq.gz --threads 16 --output $i --geneMap /home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v7/all.geneMap
+done
+
+
+############# using Salmon v0.7 and MSU_v6.1， 20240513
+wget http://rice.uga.edu/pub/data/Eukaryotic_Projects/o_sativa/annotation_dbs/pseudomolecules/version_6.1/all.dir/all.cDNA.gz
+awk '$3 == "mRNA" {print $9}' all.gff3 | sed -e 's/ID=.*.Alias=LOC_/LOC_/g' | awk '{print $1"\t"$1}' | awk 'BEGIN{OFS="\t"} {sub(/\..*$/, "", $2); print $0}' > all.geneMap
+cd /home/cx264/rds/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/7.Salmon.v0.7_MSUv6.1
+
+/home/cx264/rds/rds-csc_programmes-FTKWLWDeHys/programs/Salmon/SalmonBeta-0.7.0_linux_x86_64/bin/salmon index --transcripts /home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v6.1/all.cDNA -i MSU_v6.1.cDNA.index --type quasi --threads 16
+for i in SRR14752296 SRR14752297 SRR14752285 SRR14752291 SRR14752292 SRR14752293; do
+    echo "processing $i"
+    /home/cx264/rds/rds-csc_programmes-FTKWLWDeHys/programs/Salmon/SalmonBeta-0.7.0_linux_x86_64/bin/salmon quant --libType A --index MSU_v6.1.cDNA.index -1 /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/1.data/2.${i}_1.fastq.gz_1P.fq.gz -2 /rds-d7/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/1.data/2.${i}_1.fastq.gz_2P.fq.gz --threads 16 --output $i --geneMap /home/cx264/rds/hpc-work/project/0.ref/1.Rice_Nipponbare/MSU_v6.1/all.geneMap
+done
+
+## ExactTest in edgeR, 20240515
+.libPaths("/rds/project/rds-FTKWLWDeHys/programs/R/R-3.6.0/lib/")
+setwd("/home/cx264/rds/hpc-work/project/2.Jeongmin/01.Saskia/7.Published_RNAseq/6.Salmon.v0.7_MSUv7/09.exactTest/")
+library(EnhancedVolcano)
+library(gplots)
+library(RColorBrewer)
+library("ggplot2")
+library(edgeR)
+library(stringr)
+library(statmod)
+my_count_matrix <- read.csv("../01.raw.count.WTLP-myc_vs_mock.tab", sep = "\t", header=T)
+head(my_count_matrix)
+group <- c(1,1,1,2,2,2) ##first columns (1) are control, (2 is treatment)
+Time <- factor(c("1","2","3","1","2","3"))
+y <- DGEList(counts=my_count_matrix[,2:7], group=group,genes=my_count_matrix[,1])
+y <- calcNormFactors(y)
+head(y)
+
+de2 <- exactTest(y,dispersion=0.03)
+topTags(de2)
+
+cpm(y)[rownames(topTags(de2)),]
+summary(decideTests(de2,p.value=0.05))
+#       group
+#Down    2704
+#NotSig 48713
+#Up      4569
+
+allTags2 <- topTags(de2, n = nrow(de$genes), adjust.method = "BH", sort.by = "none", p.value = 1)
+DEG_exact2 <- as.data.frame(allTags2)
+DEG_exact2$CPM <- cpm(y)[rownames(de2),]
+write.csv(DEG_exact, "2.ExactTest.dispersion_0.03.DE.results.WTLP-myc_vs_mock.FINAL.csv", quote = F)
+
+
+## another try
+de3 <- exactTest(y,dispersion=0.03)
+topTags(de3)
+
+cpm(y)[rownames(topTags(de3)),]
+summary(decideTests(de3,p.value=0.05))
+#       group
+#Down    2151
+#NotSig 49706
+#Up      4129
+
+allTags3 <- topTags(de3, n = nrow(de3$genes), adjust.method = "BH", sort.by = "none", p.value = 1)
+DEG_exact3 <- as.data.frame(allTags3)
+DEG_exact3$CPM <- cpm(y)[rownames(de3),]
+write.csv(DEG_exact3, "2.ExactTest.dispersion_0.04.DE.results.WTLP-myc_vs_mock.FINAL.csv", quote = F)
+
+
+
+############################################
+### RNA-seq workshop, Nina data ###
+############################################
+
+### 01.data download
+cd /data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/01.Data/01.RawData
+wget https://objectstorage.uk-london-1.oraclecloud.com/p/LmjkfVVMQWW234d1bjMaJKxxbCeHleziyol_Bm4IlSUkw1wkpTTSGULSVZefDF_s/n/cnyr09qj8zbo/b/england-data/o/out/CP2024020200016/X204SC24052855-Z01-F002/X204SC24052855-Z01-F002/MD5.txt
+wget https://objectstorage.uk-london-1.oraclecloud.com/p/LmjkfVVMQWW234d1bjMaJKxxbCeHleziyol_Bm4IlSUkw1wkpTTSGULSVZefDF_s/n/cnyr09qj8zbo/b/england-data/o/out/CP2024020200016/X204SC24052855-Z01-F002/X204SC24052855-Z01-F002/X204SC24052855-Z01-F002.tar
+wget https://objectstorage.uk-london-1.oraclecloud.com/p/LmjkfVVMQWW234d1bjMaJKxxbCeHleziyol_Bm4IlSUkw1wkpTTSGULSVZefDF_s/n/cnyr09qj8zbo/b/england-data/o/out/CP2024020200016/X204SC24052855-Z01-F002/checkSize.xls
+tar -xvf X204SC24052855-Z01-F002.tar
+
+### 02.reference genome
+cd /data/pathology/cxia/projects/0.ref/2.Arabidopsis_TAIR10/
+wget https://www.arabidopsis.org/download/file?path=Genes/TAIR10_genome_release/TAIR10_chromosome_files/TAIR10_chr_all.fas.gz
+wget https://www.arabidopsis.org/download/file?path=Genes/TAIR10_genome_release/TAIR10_gff3/TAIR10_GFF3_genes.gff
+gunzip TAIR10_chr_all.fas.gz && mv TAIR10_chr_all.fas TAIR10_chr_all.fasta
+/data/pathology/program/Miniforge3/bin/bwa-mem2 index TAIR10_chr_all.fasta
+/data/pathology/program/samtools/samtools-1.19.2/bin/samtools faidx TAIR10_chr_all.fasta 
+/data/pathology/program/Novoalign/novocraft/novoindex TAIR10_chr_all.index TAIR10_chr_all.fasta
+paste -d"\t" <( awk -F"\t" '{print $1}' /data/pathology/cxia/projects/0.ref/2.Arabidopsis_TAIR10/TAIR10_functional_descriptions | sed 's/\..//g' ) <(awk -F"\t" '{print $3}' /data/pathology/cxia/projects/0.ref/2.Arabidopsis_TAIR10/TAIR10_functional_descriptions) | awk '!a[$1]++' > 01.TAIR10.function.list
+
+### 03.trimmomatic
+cd /data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/01.Data/02.TrimData/
+
+input_dir="/data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/01.Data/01.RawData/01.RawData/"
+output_dir="/data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/01.Data/01.RawData/01.TrimData/"
+
+# run trimmomatic iterate through each sample
+for fq1 in "$input_dir"/*/*_1.fq.gz; do
+    fq2="${fq1/_1.fq.gz/_2.fq.gz}" # get the corresponding paired-end file
+
+    # extract sample name
+    sample_name=$(basename "$fq1" | cut -d'_' -f1-1)
+
+    # set output files
+    output_fwd_paired="${sample_name}_1P.fq.gz"
+    output_fwd_unpaired="${sample_name}_1U.fq.gz"
+    output_rev_paired="${sample_name}_2P.fq.gz"
+    output_rev_unpaired="${sample_name}_2U.fq.gz"
+
+    # Run Trimmomatic
+    echo "processing ${sample_name}"
+    cd $output_dir
+    mkdir ${sample_name} && cd ${sample_name}
+    java -jar /data/pathology/program/Trimmomatic/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 16 -summary ${sample_name}.summary "$fq1" "$fq2" \
+        "$output_fwd_paired" "$output_fwd_unpaired" "$output_rev_paired" "$output_rev_unpaired" \
+        LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:60
+    echo "${sample_name} finished"
+done
+
+echo "Trimmomatic process completed."
+
+### 04.reads mapping
+cd /data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/02.Mapping
+
+export PATH=/data/pathology/program/java/jdk-17.0.10+7/bin:/data/pathology/program/Miniforge3/envs/R4.3.2/bin:$PATH
+
+input_dir="/data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/01.Data/01.RawData/01.TrimData/"
+output_dir="/data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/02.Mapping/"
+
+# run trimmomatic iterate through each sample
+for fq1 in "$input_dir"/*/*_1P.fq.gz; do
+    fq2="${fq1/_1P.fq.gz/_2P.fq.gz}" # get the corresponding paired-end file
+
+    # extract sample name
+    sample_name=$(basename "$fq1" | cut -d'_' -f1-1)
+
+    # Run Mapping
+    echo "processing ${sample_name}"
+    cd $output_dir
+    mkdir ${sample_name} && cd ${sample_name}
+    /data/pathology/program/Miniforge3/bin/bwa-mem2 mem -t 16 -M -a -o 2.sam -R '@RG\tID:'${sample_name}'\tSM:'${sample_name}'\tPL:illumina' /data/pathology/cxia/projects/Sebastian/SexDetermine/1.data/HS_inhertied_snps/genome/07.Final_ref/Heterodera_schachtii_v1.3.fasta "$fq1" "$fq2"
+    /data/pathology/program/samtools/samtools-1.19.2/bin/samtools view -@ 10 -ubhSt /data/pathology/cxia/projects/Sebastian/SexDetermine/1.data/HS_inhertied_snps/genome/07.Final_ref/Heterodera_schachtii_v1.3.fasta.fai 2.sam -o 3.bam
+    java -Xmx64G -jar /data/pathology/program/picard/picard/build/libs/picard.jar CleanSam INPUT=3.bam OUTPUT=4.clean.bam VALIDATION_STRINGENCY=SILENT
+    java -Xmx64G -jar /data/pathology/program/picard/picard/build/libs/picard.jar FixMateInformation INPUT=4.clean.bam OUTPUT=5.clean.fix.bam VALIDATION_STRINGENCY=SILENT
+    java -Xmx64G -jar /data/pathology/program/picard/picard/build/libs/picard.jar ValidateSamFile INPUT=5.clean.fix.bam OUTPUT=6.validation VALIDATION_STRINGENCY=LENIENT
+    java -Xmx64G -jar /data/pathology/program/picard/picard/build/libs/picard.jar CollectAlignmentSummaryMetrics INPUT=5.clean.fix.bam OUTPUT=6.metrics VALIDATION_STRINGENCY=LENIENT
+    java -Xmx64G -jar /data/pathology/program/picard/picard/build/libs/picard.jar SortSam INPUT=5.clean.fix.bam OUTPUT=7.clean.fix.sorted.bam SORT_ORDER=coordinate VALIDATION_STRINGENCY=LENIENT
+    java -Xmx64G -jar /data/pathology/program/picard/picard/build/libs/picard.jar MarkDuplicates INPUT=7.clean.fix.sorted.bam OUTPUT=${sample_name}.bam VALIDATION_STRINGENCY=LENIENT REMOVE_DUPLICATES=TRUE METRICS_FILE=8.DUP_METRICS.OUT MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=800
+    /data/pathology/program/samtools/samtools-1.19.2/bin/samtools index ${sample_name}.bam
+
+    # quality control of alignment
+    /data/pathology/program/QualiMap/qualimap_v2.3/qualimap bamqc -bam ${sample_name}.bam --java-mem-size=32G -outdir ./qualimap/ -outformat pdf
+    set +e
+    /data/pathology/program/mapinsights/mapinsights/mapinsights bamqc -r /data/pathology/cxia/projects/Sebastian/SexDetermine/1.data/HS_inhertied_snps/genome/07.Final_ref/Heterodera_schachtii_v1.3.fasta -i ${sample_name}.bam -o ./
+    set -e
+    if [[ $(find *.bam.bai -type f -size +10) ]]; then
+      echo "removing intemediate files"
+      rm -rf 2.sam 3.bam 4.clean.bam 5.clean.fix.bam 7.clean.fix.sorted.bam
+    else
+      echo "mapping was incomplete"
+    fi
+
+    echo "${sample_name} finished"
+    cd /data/pathology/cxia/projects/Jeongmin/01.Arabidopsis_workshop/02.Mapping/
+done
+
+echo "Reads mapping process completed."
+
+#### 05.HTSeq-count
+
+#### 06.DE_analysis
+# concate raw counts from all samples:
+paste -d"\t" ../02.Mapping/0.R25/3.sorted.bam.count.tsv ../02.Mapping/0.R26/3.sorted.bam.count.tsv ../02.Mapping/0.R27/3.sorted.bam.count.tsv ../02.Mapping/0.R31/3.sorted.bam.count.tsv ../02.Mapping/0.R32/3.sorted.bam.count.tsv ../02.Mapping/0.R33/3.sorted.bam.count.tsv ../02.Mapping/0.R34/3.sorted.bam.count.tsv ../02.Mapping/0.R35/3.sorted.bam.count.tsv ../02.Mapping/0.R36/3.sorted.bam.count.tsv ../02.Mapping/0.R37/3.sorted.bam.count.tsv ../02.Mapping/0.R38/3.sorted.bam.count.tsv ../02.Mapping/0.R39/3.sorted.bam.count.tsv ../02.Mapping/0.R43/3.sorted.bam.count.tsv ../02.Mapping/0.R44/3.sorted.bam.count.tsv ../02.Mapping/0.R45/3.sorted.bam.count.tsv ../02.Mapping/0.R46/3.sorted.bam.count.tsv ../02.Mapping/0.R47/3.sorted.bam.count.tsv ../02.Mapping/0.R48/3.sorted.bam.count.tsv | awk '{print $1"\t"$2"\t"$4"\t"$6"\t"$8"\t"$10"\t"$12"\t"$14"\t"$16"\t"$18"\t"$20"\t"$22"\t"$24"\t"$26"\t"$28"\t"$30"\t"$32"\t"$34"\t"$36"\t"$38}' > 01.raw.counts.tsv
+
+R
+.libPaths("/rds/project/rds-FTKWLWDeHys/programs/R/R-3.6.0/lib/")
+setwd("/rds-d7/user/cx264/hpc-work/project/2.Jeongmin/02.Arabidopsis_worshop/01.default/")
+library(EnhancedVolcano)
+library(gplots)
+library(RColorBrewer)
+library("ggplot2")
+library(edgeR)
+library(stringr)
+library(statmod)
+my_count_matrix <- read.csv("01.raw.counts.tsv", sep = "\t", header=T)
+head(my_count_matrix)
+group <- c(1,1,1,1,2,2,2,2) ##first columns (1) are control, (2 is treatment)
+Time <- factor(c("1","2","3","4","1","2","3","4"))
+y <- DGEList(counts=my_count_matrix[,2:9], group=group,genes=my_count_matrix[,1])
+keep <- filterByExpr(y)
+table(keep)
+y <- y[keep, , keep.lib.sizes=FALSE]
+dim(y)
+y <- calcNormFactors(y)
+head(y)
+pdf("1.1.LRT.MDS.pdf")
+plotMDS(y, col=rep(1:2, each=4))
+dev.off()
+design <- model.matrix(~Time+group)
+rownames(design) <- colnames(y)
+design
+y <- estimateDisp(y, design, robust=TRUE)
+y$common.dispersion
+# [1] 0.1362573
+pdf("1.2.LRT.dispersion.BCV.pdf")
+plotBCV(y)
+dev.off()
+fit <- glmQLFit(y, design, robust=TRUE)
+pdf("1.3.LRT.QLdispersion.pdf")
+plotQLDisp(fit)
+dev.off()
+qlf <- glmQLFTest(fit, coef=2:3)
+topTags(qlf)
+FDR <- p.adjust(qlf$table$PValue, method="BH")
+sum(FDR < 0.05)
+qlf <- glmQLFTest(fit)
+topTags(qlf)
+cpm(y)[rownames(topTags(qlf)),]
+summary(decideTests(qlf,lfc=1))
+#       group
+#Down    977
+#NotSig 22314
+#Up      1270
+
+pdf("1.3.QLF.FC_Count.pdf")
+plotMD(qlf)
+abline(h=c(-1, 1), col="blue")
+dev.off()
+allTags2 <- topTags(qlf, n = nrow(qlf$genes), adjust.method = "BH", sort.by = "none", p.value = 1)
+DEG_glmQLF <- as.data.frame(allTags2)
+k1 <- (DEG_glmQLF$FDR < 0.05) & (DEG_glmQLF$logFC < -1)
+k2 <- (DEG_glmQLF$FDR < 0.05) & (DEG_glmQLF$logFC > 1)
+DEG_glmQLF$change <- ifelse(k1, "DOWN", ifelse(k2, "UP", "Not_significant"))
+table(DEG_glmQLF$change)
+DEG_glmQLF$CPM <- cpm(y)[rownames(qlf),]
+write.csv(DEG_glmQLF, "1.4.QLF.DE.results.pho2LP-myc_vs_mock.FINAL.csv", quote = F)
+
+#heatmap plot
+deseq_results <- read.csv("1.4.QLF.DE.results.pho2LP-myc_vs_mock.FINAL.csv",sep=",", header = T)
+diffGenes <- deseq_results[deseq_results$FDR < 0.05,][,c(2,9,10,11,12,13,14,15,16)]
+clustRows <- hclust(as.dist(1-cor(t(diffGenes[,c(2,3,4,5,6,7,8,9)]),method="pearson")), method="complete")
+clustColumns <- hclust(as.dist(1-cor(diffGenes[,c(2,3,4,5,6,7,8,9)],method="spearman")), method="complete")
+module.assign <- cutree(clustRows, k=2)
+module.color <- rainbow(length(unique(module.assign)), start=0.1, end=0.9)
+module.color <- module.color[as.vector(module.assign)]
+myheatcolors1 <- bluered(75)
+pdf("1.5.QLF.DiffGene.pho2LP-myc_vs_mock.heatmap.pdf")
+heatmap.2(data.matrix(diffGenes[,c(2,3,4,5,6,7,8,9)]),
+    Rowv=as.dendrogram(clustRows),
+    Colv=as.dendrogram(clustColumns),
+    RowSideColors=module.color,
+    col=myheatcolors1, scale='row', labRow=NA,
+    density.info="none", trace="none",
+    cexRow=1, cexCol=1, margins=c(8,20), keysize=1, srtCol=45)
+dev.off()
+png("1.5.QLF.DiffGene.pho2LP-myc_vs_mock.heatmap.png",width = 636, height = 980)
+heatmap.2(data.matrix(diffGenes[,c(2,3,4,5,6,7,8,9)]),
+    Rowv=as.dendrogram(clustRows),
+    Colv=as.dendrogram(clustColumns),
+    RowSideColors=module.color,
+    col=myheatcolors1, scale='row', labRow=NA,
+    density.info="none", trace="none",
+    cexRow=1, cexCol=1, margins=c(8,20), keysize=0.5, srtCol=45)
+dev.off()
+
+#volcano plot
+pdf("1.6.QLF.DiffGene.pho2LP-myc_vs_mock.volcano.pdf", 7, 7)
+EnhancedVolcano(deseq_results, lab = rownames(deseq_results), x = 'logFC', y = 'FDR', pCutoff = 10e-3,
+    FCcutoff=1.0, ylim = c(0, 9), xlim = c(-15, 15), pointSize = 1.0, labSize = 0,
+    colAlpha = 1, legendIconSize=2.0, legendLabSize = 10) + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank())
+dev.off()
+png("1.6.QLF.DiffGene.pho2LP-myc_vs_mock.volcano.png", 800, 800)
+EnhancedVolcano(deseq_results, lab = rownames(deseq_results), x = 'logFC', y = 'FDR', pCutoff = 10e-3,
+    FCcutoff=1.0, ylim = c(0, 9), xlim = c(-15, 15), pointSize = 1.0, labSize = 0,
+    colAlpha = 1, legendIconSize=2.0, legendLabSize = 10) + theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank())
+dev.off()
+
+#### To add gene function to raw count matrix
+1. get gene function
+wget https://www.arabidopsis.org/api/download-files/download\?filePath\=GO_and_PO_Annotations/Gene_Ontology_Annotations/ATH_GO_GOSLIM.txt.gz
+gunzip download\?filePath=GO_and_PO_Annotations%2FGene_Ontology_Annotations%2FATH_GO_GOSLIM.txt.gz
+# to remove transcripts, only keep genes and function description
+paste -d"\t" <( awk -F"\t" '{print $1}' /data/pathology/cxia/projects/0.ref/2.Arabidopsis_TAIR10/TAIR10_functional_descriptions | sed 's/\..//g' ) <(awk -F"\t" '{print $3}' /data/pathology/cxia/projects/0.ref/2.Arabidopsis_TAIR10/TAIR10_functional_descriptions) | awk '!a[$1]++' > 01.TAIR10.function.list
+
+2. paste gene function to raw count matrix
+python paste.py 01.raw.counts.tsv /data/pathology/cxia/projects/0.ref/2.Arabidopsis_TAIR10/01.TAIR10.function.list 03.raw.counts.function.tsv
+
+#cat paste.py
+import csv
+import sys
+
+def combine_files(file1_path, file2_path, output_path):
+    # Read the second file and create a dictionary with the first column as the key and the second column as the value.
+    file2_data = {}
+    with open(file2_path, 'r') as file2:
+        reader = csv.reader(file2, delimiter='\t')
+        for row in reader:
+            if row:  # Ensure the row is not empty
+                file2_data[row[0]] = row[1]
+
+    # Open the first file to read and a new file to write the combined data.
+    with open(file1_path, 'r') as file1, open(output_path, 'w', newline='') as output:
+        reader = csv.reader(file1, delimiter='\t')
+        writer = csv.writer(output, delimiter='\t')
+
+        for row in reader:
+            if row:  # Ensure the row is not empty
+                # Check if the first column of the first file exists in the second file's dictionary.
+                key = row[0]
+                if key in file2_data:
+                    # Append the second column from the second file to the current row.
+                    row.append(file2_data[key])
+                # Write the updated row to the output file.
+                writer.writerow(row)
+
+    print(f"The second column from {file2_path} has been successfully appended to {file1_path} where the first columns match.")
+
+if __name__ == '__main__':
+    if len(sys.argv) != 4:
+        print("Usage: python script.py first.txt second.txt output.txt")
+    else:
+        file1_path = sys.argv[1]
+        file2_path = sys.argv[2]
+        output_path = sys.argv[3]
+        combine_files(file1_path, file2_path, output_path)

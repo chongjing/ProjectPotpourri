@@ -1,0 +1,3107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAMPLE_SET>
+  <SAMPLE alias="Saskia_r2310_1">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), mock inoculation (water), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_1. This library was sequenced on two NovaSeq 6000 flow cells (HWT7HDSX7 and H2WFLDSXC); the two lanes were concatenated into a single FASTQ pair before submission.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_2">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), mock inoculation (water), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_2.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_3">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), mock inoculation (water), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_3.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_4">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), mock inoculation (water), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_4.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_5">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_5.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_6">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_6.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_7">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_7.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_8">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_8. This library was sequenced on two NovaSeq 6000 flow cells (HWT7HDSX7 and H2WFLDSXC); the two lanes were concatenated into a single FASTQ pair before submission.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_9">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), mock inoculation (water), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_9.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_10">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), mock inoculation (water), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_10.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_11">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), mock inoculation (water), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_11.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_12">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), mock inoculation (water), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_12.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_13">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_13.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_14">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_14.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_15">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_15.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_16">
+    <TITLE>Oryza sativa Nipponbare pho2 root, low phosphate (25 uM), Rhizophagus irregularis (600 spores), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_16.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_17">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), mock inoculation (water), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_17.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_18">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), mock inoculation (water), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_18.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_19">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), mock inoculation (water), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_19. This library was sequenced on two NovaSeq 6000 flow cells (HWT7HDSX7 and H2WFLDSXC); the two lanes were concatenated into a single FASTQ pair before submission.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_20">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), mock inoculation (water), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_20.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_21">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_21.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_22">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_22.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_23">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_23. This library was sequenced on two NovaSeq 6000 flow cells (HWT7HDSX7 and H2WFLDSXC); the two lanes were concatenated into a single FASTQ pair before submission.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_24">
+    <TITLE>Oryza sativa Nipponbare WT root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_24.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_25">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), mock inoculation (water), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_25.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_26">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), mock inoculation (water), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_26.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_27">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), mock inoculation (water), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_27.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_28">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), mock inoculation (water), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_28.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_29">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_29.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_30">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 2</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 2 (experimental batch 2). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_30.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_31">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 3</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 3 (experimental batch 3). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_31.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>3</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+  <SAMPLE alias="Saskia_r2310_32">
+    <TITLE>Oryza sativa Nipponbare pho2 root, high phosphate (250 uM), Rhizophagus irregularis (600 spores), replicate 4</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: pho2 Tos17 insertion mutant of OsPHO2 (LOC_Os05g48390); allele not distinguished between pho2-1 (NF2586) and pho2-2 (NE9017). Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 250 uM phosphate (HP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Inoculated with 600 freshly extracted Rhizophagus irregularis spores from hairy carrot root organ cultures. Biological replicate 4 (experimental batch 4). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_32.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>pho2</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>symbiont</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>Rhizophagus irregularis</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>250 uM HP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>myc</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>4</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+</SAMPLE_SET>

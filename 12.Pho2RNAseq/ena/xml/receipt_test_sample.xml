@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="receipt.xsl"?>
+<RECEIPT receiptDate="2026-09-05T10:50:46.034+01:00" submissionFile="submission_samples.xml" success="true">
+     <SAMPLE accession="ERS32372714" alias="Saskia_r2310_1" status="PRIVATE" holdUntilDate="2027-09-05+01:00">
+          <EXT_ID accession="SAMEA132184470" type="biosample"/>
+     </SAMPLE>
+     <SUBMISSION accession="ERA36946336" alias="submission_samples"/>
+     <MESSAGES>
+          <INFO>All objects in this submission are set to private status (HOLD).</INFO>
+          <INFO>This submission is a TEST submission and will be discarded within 24 hours</INFO>
+     </MESSAGES>
+     <ACTIONS>ADD</ACTIONS>
+     <ACTIONS>HOLD</ACTIONS>
+</RECEIPT>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAMPLE_SET>
+  <SAMPLE alias="Saskia_r2310_1">
+    <TITLE>Oryza sativa Nipponbare WT root, low phosphate (25 uM), mock inoculation (water), replicate 1</TITLE>
+    <SAMPLE_NAME>
+      <TAXON_ID>39947</TAXON_ID>
+      <SCIENTIFIC_NAME>Oryza sativa Japonica Group</SCIENTIFIC_NAME>
+      <COMMON_NAME>rice</COMMON_NAME>
+    </SAMPLE_NAME>
+    <DESCRIPTION>Rice (Oryza sativa L. ssp. Japonica cv. Nipponbare) root RNA-seq. Genotype: wild type. Grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light/12 h dark, 350 uE m-2 s-1, 28/20 C, 65% RH). Seedlings watered with RO water for one week, then fertilised twice weekly with half-strength Hoagland solution at 25 uM phosphate (LP) plus 0.01% (w/v) Sequestrene Rapid iron supplement. Mock inoculated with RO water. Biological replicate 1 (experimental batch 1). Organism part: root. Collection date: 2023-10. Geographic location: United Kingdom (Crop Science Centre, University of Cambridge). mRNA library (oligo-dT), 150 bp paired-end, Illumina NovaSeq 6000, Novogene (Cambridge, UK). Library name: r2310_1. This library was sequenced on two NovaSeq 6000 flow cells (HWT7HDSX7 and H2WFLDSXC); the two lanes were concatenated into a single FASTQ pair before submission.</DESCRIPTION>
+    <SAMPLE_ATTRIBUTES>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>ENA-CHECKLIST</TAG>
+        <VALUE>ERC000037</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collection date</TAG>
+        <VALUE>2023-10</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (country and/or sea)</TAG>
+        <VALUE>United Kingdom</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (region and locality)</TAG>
+        <VALUE>Cambridge</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (latitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>geographic location (longitude)</TAG>
+        <VALUE>not collected</VALUE>
+        <UNITS>DD</UNITS>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant structure</TAG>
+        <VALUE>root</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant developmental stage</TAG>
+        <VALUE>vegetative</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>plant growth medium</TAG>
+        <VALUE>silica sand</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>isolation and growth condition</TAG>
+        <VALUE>Seeds sterilised, germinated 3-6 d at 30 C, grown in autoclaved silica 14/25 sand in a CONVIRON EVO chamber (12 h light, 28/20 C, 65% RH) with half-strength Hoagland solution at 25 or 250 uM phosphate.</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>growth facility</TAG>
+        <VALUE>growth chamber</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>organism common name</TAG>
+        <VALUE>rice</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>genotype</TAG>
+        <VALUE>wild type</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>cultivar</TAG>
+        <VALUE>Nipponbare</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>collected_by</TAG>
+        <VALUE>Jeongmin Choi</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>sample health state</TAG>
+        <VALUE>healthy</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>observed biotic relationship</TAG>
+        <VALUE>free living</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>infect</TAG>
+        <VALUE>none</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>phosphate treatment</TAG>
+        <VALUE>25 uM LP</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>inoculation</TAG>
+        <VALUE>mock</VALUE>
+      </SAMPLE_ATTRIBUTE>
+      <SAMPLE_ATTRIBUTE>
+        <TAG>replicate</TAG>
+        <VALUE>1</VALUE>
+      </SAMPLE_ATTRIBUTE>
+    </SAMPLE_ATTRIBUTES>
+  </SAMPLE>
+</SAMPLE_SET>

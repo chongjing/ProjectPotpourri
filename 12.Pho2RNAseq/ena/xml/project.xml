@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROJECT_SET>
+  <PROJECT alias="Saskia_PHO2_AM_RNAseq">
+    <NAME>Saskia_PHO2_AM_RNAseq</NAME>
+    <TITLE>PHOSPHATE OVERACCUMULATOR 2 (PHO2) is a negative regulator of arbuscular mycorrhizal symbiosis</TITLE>
+    <DESCRIPTION>Root mRNA-seq of Oryza sativa Nipponbare WT and pho2 at 25 or 250 uM phosphate, mock or Rhizophagus irregularis; 32 libraries, 4 replicates. Crop Science Centre, University of Cambridge.</DESCRIPTION>
+    <SUBMISSION_PROJECT>
+      <SEQUENCING_PROJECT/>
+    </SUBMISSION_PROJECT>
+  </PROJECT>
+</PROJECT_SET>

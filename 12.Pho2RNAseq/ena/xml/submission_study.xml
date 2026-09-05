@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SUBMISSION alias="submission_study">
+  <CONTACTS>
+    <CONTACT name="Jeongmin Choi" inform_on_error="jc913@cam.ac.uk" inform_on_status="jc913@cam.ac.uk"/>
+    <CONTACT name="Chongjing Xia" inform_on_error="xiachongjing@gmail.com" inform_on_status="xiachongjing@gmail.com"/>
+  </CONTACTS>
+  <ACTIONS>
+    <ACTION>
+      <ADD/>
+    </ACTION>
+    <ACTION>
+      <HOLD HoldUntilDate="2027-09-05"/>
+    </ACTION>
+  </ACTIONS>
+</SUBMISSION>

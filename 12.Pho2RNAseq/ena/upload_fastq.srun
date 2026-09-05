@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH -A EVESVANDENAKKER-SL3-CPU
+#SBATCH --partition=sapphire
+#SBATCH --job-name=ena-upload
+#SBATCH --output=upload_slurm.o
+#SBATCH --error=upload_slurm.e
+#SBATCH --time=0-12:00:00
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=4000
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=cx264@cam.ac.uk
+
+set -euo pipefail
+cd /rds/user/cx264/hpc-work/project/2.Jeongmin/01.Saskia/1.data/ENA_submit
+
+export ENA_WEBIN_USER="${ENA_WEBIN_USER:-Webin-69760}"
+if [[ -z "${ENA_WEBIN_PASSWORD:-}" ]]; then
+  echo "Set ENA_WEBIN_PASSWORD in the environment before sbatch." >&2
+  exit 1
+fi
+
+python3 upload_fastq.py
