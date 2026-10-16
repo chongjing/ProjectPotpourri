@@ -6,9 +6,9 @@ This project compares BM-effector infection phenotypes in root and shoot tissues
 
 The complete portable snapshot is in [`03.final_combined/`](03.final_combined/).
 
-![Combined root-shoot phenotype heatmap, illustrative k=7 cut](03.final_combined/figures/previews/combined_k7_control_labelled.jpeg)
+![Combined root-shoot phenotype heatmap, illustrative k=8 cut](03.final_combined/figures/previews/combined_k8_control_labelled.jpeg)
 
-The displayed k=7 solution is an example, not a selected optimum. All requested cluster cuts and both colour references are available as PDFs.
+The displayed k=8 solution is an example, not a selected optimum. All requested cluster cuts and both colour references are available as PDFs.
 
 ### What changed from v3
 

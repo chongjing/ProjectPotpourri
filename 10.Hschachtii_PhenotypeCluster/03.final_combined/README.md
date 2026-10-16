@@ -2,23 +2,23 @@
 
 This directory contains the final-sheet analysis of BM-effector phenotypes in root and shoot tissues. The root, shoot and combined profiles were clustered independently using newly calculated Ward hierarchies and compared at k = 7, 8, 9, 10, 11 and 12.
 
-The k=7 images below are examples for web display. They are not presented as an optimal cluster number. Results for every requested k are available as PDFs under `figures/`.
+The k=8 images below are examples for web display. They are not presented as an optimal cluster number. Results for every requested k are available as PDFs under `figures/`.
 
-## Root example: k=7, control-centred colours
+## Root example: k=8, control-centred colours
 
-![Root k=7 control-centred heatmap](figures/previews/root_k7_control_labelled.jpeg)
+![Root k=8 control-centred heatmap](figures/previews/root_k8_control_labelled.jpeg)
 
 ![Root comparison of k=7 to k=12](figures/previews/root_k_comparison.jpeg)
 
-## Shoot example: k=7, control-centred colours
+## Shoot example: k=8, control-centred colours
 
-![Shoot k=7 control-centred heatmap](figures/previews/shoot_k7_control_labelled.jpeg)
+![Shoot k=8 control-centred heatmap](figures/previews/shoot_k8_control_labelled.jpeg)
 
 ![Shoot comparison of k=7 to k=12](figures/previews/shoot_k_comparison.jpeg)
 
-## Combined example: k=7, control-centred colours
+## Combined example: k=8, control-centred colours
 
-![Combined k=7 control-centred heatmap](figures/previews/combined_k7_control_labelled.jpeg)
+![Combined k=8 control-centred heatmap](figures/previews/combined_k8_control_labelled.jpeg)
 
 ![Combined comparison of k=7 to k=12](figures/previews/combined_k_comparison.jpeg)
 

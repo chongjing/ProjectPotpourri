@@ -5,7 +5,7 @@
     {
       "path": "README.md",
       "size": 6721,
-      "sha256": "387ca346e491ed4b39337b037e4312503076bac96efe9b89557b8b515f934873"
+      "sha256": "5df4ad29337a9749dd4c0824a6c6a80a91a26fbfed0d67fbe99398ae28562bfe"
     },
     {
       "path": "data/phenotype_summary_root.csv",
@@ -173,9 +173,9 @@
       "sha256": "0b246d482a193b574c4bfd054c576e099ca590ce62730c8d1a53d800cab4221f"
     },
     {
-      "path": "figures/previews/combined_k7_control_labelled.jpeg",
-      "size": 243511,
-      "sha256": "9a373764ee1b9ae4b99281ee3391159908117993c59ba3a1e169caa128b8f913"
+      "path": "figures/previews/combined_k8_control_labelled.jpeg",
+      "size": 246454,
+      "sha256": "f12a1176e89ab338c4f373e7f7db730d55e7abbff292ae6b7cee0d553802ab5d"
     },
     {
       "path": "figures/previews/combined_k_comparison.jpeg",
@@ -183,9 +183,9 @@
       "sha256": "2b2e70fae64bd27908faf35c3dc2081eefcc87cf994e9120e69db36b359d8df9"
     },
     {
-      "path": "figures/previews/root_k7_control_labelled.jpeg",
-      "size": 250311,
-      "sha256": "b4f569a7c376c73d3efbead9919899ac9c6f5a9b2a2ec94212b6ed59607bb09f"
+      "path": "figures/previews/root_k8_control_labelled.jpeg",
+      "size": 253085,
+      "sha256": "2922ae4bc87b50d90101747542d281fd3d937724e2a65e06c3d1b580fd529095"
     },
     {
       "path": "figures/previews/root_k_comparison.jpeg",
@@ -193,9 +193,9 @@
       "sha256": "a569e32e5c0adf056c693be30ff038859b7f68ac71efee4ed386462f1b02c7da"
     },
     {
-      "path": "figures/previews/shoot_k7_control_labelled.jpeg",
-      "size": 242943,
-      "sha256": "1c32472ac49d56b42f9473956003265fb9276912924ef0e4ef0ec5627f500433"
+      "path": "figures/previews/shoot_k8_control_labelled.jpeg",
+      "size": 245402,
+      "sha256": "0b47f4e9ed1bffbba30e16985a7e21246f8b278f1d2c3149f0add81c1e4ad928"
     },
     {
       "path": "figures/previews/shoot_k_comparison.jpeg",
