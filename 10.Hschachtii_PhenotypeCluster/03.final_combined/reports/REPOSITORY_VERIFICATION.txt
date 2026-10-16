@@ -1,0 +1,12 @@
+Repository snapshot verification: PASS
+
+Files checked before this report was added: 171
+Bytes checked: 6,495,173
+PDF figures checked: 93
+JPEG README previews checked: 6
+Forbidden absolute-path scan: PASS
+Credential-pattern scan: PASS
+Portable full-build verification: PASS
+Regression tests: 8 passed
+
+The final manifest was regenerated after adding this report and re-verified.

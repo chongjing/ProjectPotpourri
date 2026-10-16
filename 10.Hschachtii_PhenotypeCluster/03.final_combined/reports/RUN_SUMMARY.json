@@ -1,0 +1,151 @@
+{
+  "status": "complete",
+  "completed_local_time": "2026-10-16T16:17:08.290322+01:00",
+  "input_files": {
+    "root": "data/phenotype_summary_root.csv",
+    "shoot": "data/phenotype_summary_shoot.csv"
+  },
+  "input_sha256": {
+    "root": "eac2b47708d85cca3be66d81379e0753ab39f8cd5ace15aab70f49bbf48d4529",
+    "shoot": "6940b672b5da486f50ccbda314169efefe1b8790c01985151138a7adc1fef449"
+  },
+  "k_values": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "raster_dpi": 900,
+  "timing_cap_dpg": 29.0,
+  "scopes": [
+    "root",
+    "shoot",
+    "combined"
+  ],
+  "pairing_confirmed": false,
+  "sd_ddof": 0,
+  "controls_in_clustering": true,
+  "stability_analysis": false,
+  "trait_correlation_analysis": false,
+  "sensitivity_analysis": false,
+  "qc": {
+    "root": {
+      "input_records": 776,
+      "source_exclusions": 58,
+      "additional_joint_zero_exclusions": 65,
+      "retained_records": 653,
+      "genotypes": 75,
+      "remaining_zero_final_size": 13,
+      "excluded_entire_genotypes": [
+        "BM00005",
+        "BM00068"
+      ],
+      "control_replicates": {
+        "Col-0": 11,
+        "EmptyVector": 7,
+        "GFP": 11
+      },
+      "timing_status_counts": {
+        "observed": 613,
+        "right_censored": 33,
+        "observed_after_cap": 6,
+        "left_censored_upper_bound": 1
+      },
+      "missing_analysis_values": {
+        "area_end_mm2": 0,
+        "AUC": 0,
+        "time_to_10mm2_capped": 0,
+        "AGR_mean": 0,
+        "AGR_max": 0,
+        "RGR_mean": 13,
+        "RGR_peak": 13,
+        "RGR_final": 13
+      },
+      "low_replicate_genotypes": {
+        "BM00018": 2,
+        "BM00029": 1
+      }
+    },
+    "shoot": {
+      "input_records": 777,
+      "source_exclusions": 63,
+      "additional_joint_zero_exclusions": 65,
+      "retained_records": 649,
+      "genotypes": 75,
+      "remaining_zero_final_size": 24,
+      "excluded_entire_genotypes": [
+        "BM00005",
+        "BM00068"
+      ],
+      "control_replicates": {
+        "Col-0": 10,
+        "EmptyVector": 7,
+        "GFP": 11
+      },
+      "timing_status_counts": {
+        "observed": 590,
+        "right_censored": 50,
+        "observed_after_cap": 9
+      },
+      "missing_analysis_values": {
+        "area_end_mm2": 0,
+        "AUC": 0,
+        "time_to_10mm2_capped": 0,
+        "AGR_mean": 0,
+        "AGR_max": 0,
+        "RGR_mean": 20,
+        "RGR_peak": 20,
+        "RGR_final": 25
+      },
+      "low_replicate_genotypes": {
+        "BM00018": 2,
+        "BM00029": 1
+      }
+    }
+  },
+  "analyses": {
+    "root": {
+      "n_genotypes": 75,
+      "n_traits": 8,
+      "pca_pc1_fraction": 0.7474548606798666,
+      "pca_pc2_fraction": 0.10898702700025224,
+      "validation": {
+        "max_distance_difference": 1.7763568394002505e-15,
+        "max_same_basis_pca_difference": 2.7200464103316335e-15
+      }
+    },
+    "shoot": {
+      "n_genotypes": 75,
+      "n_traits": 8,
+      "pca_pc1_fraction": 0.7816133462349859,
+      "pca_pc2_fraction": 0.08399351763800719,
+      "validation": {
+        "max_distance_difference": 1.7763568394002505e-15,
+        "max_same_basis_pca_difference": 2.9004576518332215e-15
+      }
+    },
+    "combined": {
+      "n_genotypes": 75,
+      "n_traits": 16,
+      "pca_pc1_fraction": 0.7199633166486917,
+      "pca_pc2_fraction": 0.07152133743363791,
+      "validation": {
+        "max_distance_difference": 1.7763568394002505e-15,
+        "max_same_basis_pca_difference": 2.864375403532904e-14
+      }
+    }
+  },
+  "software_versions": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "SciPy": "1.15.3",
+    "scikit-learn": "1.6.1",
+    "Matplotlib": "3.10.0",
+    "Pillow": "12.2.0",
+    "Python": "3.13.5"
+  },
+  "figure_sets": 93,
+  "figure_files": 372
+}

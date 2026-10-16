@@ -1,0 +1,85 @@
+Final combined phenotype analysis: pre-clustering input audit
+
+Status: Historical pre-clustering audit. The questions below were subsequently
+resolved with the user: included-row blank threshold times mean no crossing;
+use the approved day-29 cap and retain the supplied day-8 upper bound with a flag.
+Clustering and plotting are now COMPLETE, with independent verification PASS.
+See RUN_SUMMARY.json, RESULTS_SUMMARY.txt and VERIFICATION.txt for final outputs.
+The observations below retain the original pre-encoding audit context.
+
+Authoritative inputs:
+  phenotype_summary_root.csv
+  phenotype_summary_shoot.csv
+
+Approved specification:
+  Exclude a matched effector + replicate identifier when final size is exactly
+  zero in BOTH tissues. This is an identifier-based rule, not proof of paired
+  biological samples. Honour the final-sheet included flags and blank exclusions.
+  Reference mean and SD are to be computed from retained individual replicate
+  measurements, separately by tissue and trait. Compare k=7,8,9,10,11,12.
+  Figure formats: PDF, JPEG, SVG, TIFF; raster outputs at 900 dpi.
+  No stability, trait-correlation, or sensitivity analyses.
+
+Verified row counts:
+  Root: 776 input; 58 excluded by final-sheet included=False; 65 additional
+        identifiers excluded for zero final size in both tissues; 653 retained.
+  Shoot: 777 input; 63 excluded by final-sheet included=False; 65 additional
+         identifiers excluded for zero final size in both tissues; 649 retained.
+  No duplicate effector + replicate identifiers within either input.
+  There are 75 represented genotypes after filtering in each tissue.
+  Retained zero-final-size rows: root 13; shoot 24. These do not satisfy the
+  joint-zero exclusion rule and have NOT been discarded individually.
+
+Retained control rows:
+  Root: Col-0 11; EmptyVector 7; GFP 11.
+  Shoot: Col-0 10; EmptyVector 7; GFP 11.
+
+Missing trait measurements among retained rows:
+  Root: time_to_10mm2 33; RGR_mean 13; RGR_peak 13; RGR_final 13.
+  Shoot: time_to_10mm2 50; RGR_mean 20; RGR_peak 20; RGR_final 25.
+  The other requested trait columns are complete in retained rows.
+  No infinite trait values were found.
+
+Decision needed before numerical clustering:
+  These missing cells occur in rows marked included=True, not just in excluded
+  outlier rows. All genotype medians would be numerically complete if calculated
+  from available values, but doing so can conceal substantial missingness.
+  In particular, shoot BM00088 has 9 retained replicates, only 1 recorded
+  time_to_10mm2 value, and 8 blank time_to_10mm2 cells. If blanks mean the
+  threshold was never reached, the observed-value median describes only the
+  threshold-reaching subset, not all retained replicates.
+  Root BM00092 replicate 1 also has time_to_10mm2_left_censored=True and a stored
+  value of 8.0. Its stored threshold time is therefore not an exact crossing time.
+  No blank cells have been filled; no max+1 substitution has been applied.
+
+Low-replicate flags:
+  BM00018: 2 retained rows in each tissue.
+  BM00029: 1 retained row in each tissue.
+
+Follow-up investigation after user chose to resolve blank-time meaning:
+  All 33 retained root rows with blank time_to_10mm2 have
+  max_area_before_zeroing_mm2 below 10 (maximum 9.314638815189888).
+  None has a source exclusion_reason. This directly supports no observed
+  threshold crossing, rather than a wholly excluded replicate.
+  Of these rows, 13 have no_root=True and all three RGR traits blank; the other
+  20 have no_root=False. End-of-observation dpg is 31 for one row and 34 for 32.
+  All 50 retained shoot rows with blank time_to_10mm2 have final size below 10
+  and no source exclusion_reason. Shoot lacks a maximum-area field, so final
+  size alone cannot prove the threshold was never crossed earlier in the curve.
+  Shoot observation-end dpg is 29 for one blank-time row, 31 for one, and 34
+  for 48. All eight blank-time BM00088 shoot records end at dpg=34; the only
+  recorded crossing is replicate 11 at time_to_10mm2=14.703772 (rounded).
+  All recorded threshold times lie within their row's start_dpg/end_dpg range;
+  this is consistent with an absolute dpg time convention, not duration_days.
+  The input-generation script was not located in the searched Beth or root
+  phenotype project directories. source_csv entries point to Windows OneDrive
+  paths. Existing old clustering scripts consume summaries and do not establish
+  the final-sheet generator's missing-value convention.
+  User confirmation or the final-sheet generation script is still needed before
+  assigning definitive right-censoring status or choosing a numerical encoding.
+  Clustering and figures remain paused. No values have been imputed.
+
+Files:
+  tables/qc_replicate_disposition.csv records every input row and disposition.
+  tables/qc_retained_missing_traits.csv lists missing requested trait cells on
+  retained rows. Neither file changes the source CSVs.

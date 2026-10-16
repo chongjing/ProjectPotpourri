@@ -1,18 +1,20 @@
 # ProjectPotpourri
 
-Collection of small projects.
+Collection of small research projects.
 
-## *H. schachtii* BM-effector phenotype clustering
+## H. schachtii BM-effector phenotype clustering
 
-Pooled-control heatmaps of root and shoot infection phenotypes. White = like Col-0 / EmptyVector / GFP; blue = below controls; red = above. Same Ward dendrograms as the original clustering.
+The final root-shoot phenotype analysis uses the finalised replicate sheets, recalculates Euclidean-Ward hierarchies and compares k = 7 through k = 12. Heatmaps are provided relative to all retained individual measurements and relative to the pooled Col-0, EmptyVector and GFP controls.
 
-Full pipeline and labelled figures: [`10.Hschachtii_PhenotypeCluster/`](10.Hschachtii_PhenotypeCluster/).
+Full analysis, methods, source tables and PDFs: [`10.Hschachtii_PhenotypeCluster/03.final_combined/`](10.Hschachtii_PhenotypeCluster/03.final_combined/)
 
-![Root pooled-control heatmap (compact, k=3)](10.Hschachtii_PhenotypeCluster/02.v3_pooled_control_heatmaps/figures/main/root_ctrl_heatmap_compact.jpeg)
+![Combined final phenotype heatmap, illustrative k=7 cut](10.Hschachtii_PhenotypeCluster/03.final_combined/figures/previews/combined_k7_control_labelled.jpeg)
+
+The displayed k=7 heatmap is illustrative; the repository contains all requested k=7–12 comparisons. The earlier pooled-control v3 snapshot remains available for provenance.
 
 ## Projects
 
-- [`01.Bursaphelenchus_RNAseq`](01.Bursaphelenchus_RNAseq) — *B. xylophilus* stage-specific transcriptome
-- [`10.Hschachtii_PhenotypeCluster`](10.Hschachtii_PhenotypeCluster/) — BM effector infection-phenotype clustering; pooled-control heatmaps
-- [`11.Hglycines_clustering`](11.Hglycines_clustering/) — *H. glycines* gene-centred VST clustering
+- [`01.Bursaphelenchus_RNAseq`](01.Bursaphelenchus_RNAseq) — B. xylophilus stage-specific transcriptome
+- [`10.Hschachtii_PhenotypeCluster`](10.Hschachtii_PhenotypeCluster/) — final root-shoot BM-effector phenotype clustering
+- [`11.Hglycines_clustering`](11.Hglycines_clustering/) — H. glycines gene-centred VST clustering
 - [`12.Pho2RNAseq`](12.Pho2RNAseq/) — rice AM × PHO2 root RNA-seq (ENA PRJEB125245)

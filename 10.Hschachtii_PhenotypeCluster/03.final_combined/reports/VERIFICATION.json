@@ -1,0 +1,636 @@
+{
+  "status": "PASS",
+  "verified_figure_sets": 93,
+  "verified_figure_files": 372,
+  "figures_by_kind": {
+    "heatmap": 72,
+    "pca": 18,
+    "k_comparison": 3
+  },
+  "files_by_extension": {
+    ".pdf": 93,
+    ".jpeg": 93,
+    ".svg": 93,
+    ".tiff": 93
+  },
+  "pdf_heatmap_cells_checked": 57600,
+  "pdf_row_labels_checked": 2700,
+  "pooled_reference_cells_checked": 768,
+  "max_pdf_rgb_channel_error": 1,
+  "max_raster_control_rgb_channel_error": 1,
+  "raster_dpi": 900,
+  "input_hashes_unchanged": true,
+  "independent_numerical_reconstruction_passed": true,
+  "exact_k_cuts_passed": true,
+  "checks": [
+    {
+      "pdf": "figures/root/k7/root_k7_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k7/root_k7_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k7/root_k7_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k7/root_k7_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k7/root_k7_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k8/root_k8_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k8/root_k8_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k8/root_k8_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k8/root_k8_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k8/root_k8_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k9/root_k9_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k9/root_k9_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k9/root_k9_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k9/root_k9_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k9/root_k9_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k10/root_k10_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k10/root_k10_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k10/root_k10_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k10/root_k10_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k10/root_k10_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k11/root_k11_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k11/root_k11_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k11/root_k11_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k11/root_k11_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k11/root_k11_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k12/root_k12_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k12/root_k12_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k12/root_k12_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k12/root_k12_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/k12/root_k12_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/root/root_k_comparison.pdf",
+      "kind": "k_comparison",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k7/shoot_k7_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k7/shoot_k7_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k7/shoot_k7_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k7/shoot_k7_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k7/shoot_k7_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k8/shoot_k8_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k8/shoot_k8_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k8/shoot_k8_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k8/shoot_k8_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k8/shoot_k8_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k9/shoot_k9_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k9/shoot_k9_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k9/shoot_k9_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k9/shoot_k9_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k9/shoot_k9_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k10/shoot_k10_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k10/shoot_k10_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k10/shoot_k10_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k10/shoot_k10_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k10/shoot_k10_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k11/shoot_k11_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k11/shoot_k11_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k11/shoot_k11_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k11/shoot_k11_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k11/shoot_k11_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k12/shoot_k12_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k12/shoot_k12_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k12/shoot_k12_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k12/shoot_k12_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 600,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/k12/shoot_k12_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/shoot/shoot_k_comparison.pdf",
+      "kind": "k_comparison",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k7/combined_k7_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k7/combined_k7_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k7/combined_k7_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k7/combined_k7_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k7/combined_k7_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k8/combined_k8_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k8/combined_k8_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k8/combined_k8_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k8/combined_k8_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k8/combined_k8_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k9/combined_k9_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k9/combined_k9_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k9/combined_k9_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k9/combined_k9_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k9/combined_k9_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k10/combined_k10_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k10/combined_k10_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k10/combined_k10_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k10/combined_k10_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k10/combined_k10_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k11/combined_k11_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k11/combined_k11_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k11/combined_k11_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k11/combined_k11_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k11/combined_k11_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k12/combined_k12_global_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k12/combined_k12_global_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k12/combined_k12_control_labelled.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 75,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k12/combined_k12_control_compact.pdf",
+      "kind": "heatmap",
+      "cells_checked": 1200,
+      "row_labels_checked": 0,
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/k12/combined_k12_pca.pdf",
+      "kind": "pca",
+      "status": "PASS"
+    },
+    {
+      "pdf": "figures/combined/combined_k_comparison.pdf",
+      "kind": "k_comparison",
+      "status": "PASS"
+    }
+  ]
+}

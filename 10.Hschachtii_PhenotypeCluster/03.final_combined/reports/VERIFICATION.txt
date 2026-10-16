@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "verified_figure_sets": 93,
+  "verified_figure_files": 372,
+  "figures_by_kind": {
+    "heatmap": 72,
+    "pca": 18,
+    "k_comparison": 3
+  },
+  "files_by_extension": {
+    ".pdf": 93,
+    ".jpeg": 93,
+    ".svg": 93,
+    ".tiff": 93
+  },
+  "pdf_heatmap_cells_checked": 57600,
+  "pdf_row_labels_checked": 2700,
+  "pooled_reference_cells_checked": 768,
+  "max_pdf_rgb_channel_error": 1,
+  "max_raster_control_rgb_channel_error": 1,
+  "raster_dpi": 900,
+  "input_hashes_unchanged": true,
+  "independent_numerical_reconstruction_passed": true,
+  "exact_k_cuts_passed": true
+}

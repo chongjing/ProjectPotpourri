@@ -5,3 +5,10 @@
 *.log
 __pycache__/
 .xdg/
+.hermes/
+
+# Final combined snapshot: keep only six web-preview JPEGs in normal Git.
+03.final_combined/figures/**/*.jpeg
+!03.final_combined/figures/previews/
+!03.final_combined/figures/previews/*.jpeg
+03.final_combined/.pytest_cache/

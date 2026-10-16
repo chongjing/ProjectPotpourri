@@ -1,0 +1,75 @@
+{
+  "root": {
+    "input_records": 776,
+    "source_exclusions": 58,
+    "additional_joint_zero_exclusions": 65,
+    "retained_records": 653,
+    "genotypes": 75,
+    "remaining_zero_final_size": 13,
+    "excluded_entire_genotypes": [
+      "BM00005",
+      "BM00068"
+    ],
+    "control_replicates": {
+      "Col-0": 11,
+      "EmptyVector": 7,
+      "GFP": 11
+    },
+    "timing_status_counts": {
+      "observed": 613,
+      "right_censored": 33,
+      "observed_after_cap": 6,
+      "left_censored_upper_bound": 1
+    },
+    "missing_analysis_values": {
+      "area_end_mm2": 0,
+      "AUC": 0,
+      "time_to_10mm2_capped": 0,
+      "AGR_mean": 0,
+      "AGR_max": 0,
+      "RGR_mean": 13,
+      "RGR_peak": 13,
+      "RGR_final": 13
+    },
+    "low_replicate_genotypes": {
+      "BM00018": 2,
+      "BM00029": 1
+    }
+  },
+  "shoot": {
+    "input_records": 777,
+    "source_exclusions": 63,
+    "additional_joint_zero_exclusions": 65,
+    "retained_records": 649,
+    "genotypes": 75,
+    "remaining_zero_final_size": 24,
+    "excluded_entire_genotypes": [
+      "BM00005",
+      "BM00068"
+    ],
+    "control_replicates": {
+      "Col-0": 10,
+      "EmptyVector": 7,
+      "GFP": 11
+    },
+    "timing_status_counts": {
+      "observed": 590,
+      "right_censored": 50,
+      "observed_after_cap": 9
+    },
+    "missing_analysis_values": {
+      "area_end_mm2": 0,
+      "AUC": 0,
+      "time_to_10mm2_capped": 0,
+      "AGR_mean": 0,
+      "AGR_max": 0,
+      "RGR_mean": 20,
+      "RGR_peak": 20,
+      "RGR_final": 25
+    },
+    "low_replicate_genotypes": {
+      "BM00018": 2,
+      "BM00029": 1
+    }
+  }
+}

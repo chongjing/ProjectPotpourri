@@ -1,0 +1,62 @@
+Final phenotype clustering: run summary
+
+Completed: 2026-10-13T22:16:35.836483+01:00
+Status: execution exit code 0; independent verification PASS.
+
+root: 776 source rows; 58 final-sheet exclusions; 65 additional joint-zero exclusions; 653 retained rows.
+  75 genotypes including controls. Entirely excluded genotypes: BM00005, BM00068.
+  Retained control counts: {'Col-0': 11, 'EmptyVector': 7, 'GFP': 11}
+  Timing classifications: {'observed': 613, 'right_censored': 33, 'observed_after_cap': 6, 'left_censored_upper_bound': 1}
+  Low-replicate genotypes: {'BM00018': 2, 'BM00029': 1}
+
+shoot: 777 source rows; 63 final-sheet exclusions; 65 additional joint-zero exclusions; 649 retained rows.
+  75 genotypes including controls. Entirely excluded genotypes: BM00005, BM00068.
+  Retained control counts: {'Col-0': 10, 'EmptyVector': 7, 'GFP': 11}
+  Timing classifications: {'observed': 590, 'right_censored': 50, 'observed_after_cap': 9}
+  Low-replicate genotypes: {'BM00018': 2, 'BM00029': 1}
+
+All requested cuts: 7, 8, 9, 10, 11, 12.
+Root and shoot each use 8 traits; combined uses 16 tissue-specific traits.
+All genotypes have a complete summary vector after the approved timing encoding.
+
+root: PC1=74.75%; PC2=10.90%; combined=85.64%.
+ k  silhouette  smallest_cluster  largest_cluster  singleton_clusters
+ 7    0.215881                 1               29                   1
+ 8    0.206399                 1               18                   1
+ 9    0.213003                 1               18                   1
+10    0.225087                 1               16                   1
+11    0.222071                 1               16                   3
+12    0.224973                 1               16                   4
+
+shoot: PC1=78.16%; PC2=8.40%; combined=86.56%.
+ k  silhouette  smallest_cluster  largest_cluster  singleton_clusters
+ 7    0.270307                 3               25                   0
+ 8    0.252565                 3               25                   0
+ 9    0.253358                 1               25                   1
+10    0.262250                 1               25                   2
+11    0.234673                 1               19                   2
+12    0.239973                 1               19                   2
+
+combined: PC1=72.00%; PC2=7.15%; combined=79.15%.
+ k  silhouette  smallest_cluster  largest_cluster  singleton_clusters
+ 7    0.151451                 1               23                   1
+ 8    0.163896                 1               21                   1
+ 9    0.169284                 1               16                   1
+10    0.170343                 1               16                   1
+11    0.178864                 1               16                   1
+12    0.183203                 1               16                   1
+
+Interpretation limits:
+  No best or validated k is claimed. High-k partitions include small and singleton groups.
+  BM00029 is based on one retained replicate per tissue; BM00018 has two.
+  Other missing traits were not filled. RGR summaries use the subset with defined RGR.
+  Time capped at day 29 intentionally does not distinguish later crossings from non-crossing by day 29.
+  Root BM00092 replicate 1 uses a supplied left-censored upper bound, not an exact crossing.
+  Cross-tissue biological pairing is unconfirmed; the zero filter matches identifiers only.
+  Changing the heatmap reference point leaves distances unchanged; this is not a stability test.
+  No p-values, stability, trait-correlation or sensitivity analyses were performed.
+
+Verified outputs: 93 figures, 372 files, four formats; JPEG/TIFF 900 dpi.
+Actual figure types: {'heatmap': 72, 'pca': 18, 'k_comparison': 3}
+PDF data-cell checks: 57600; PDF row-label checks: 2700; reference-strip checks: 768.
+Representative final root/shoot PCA and combined heatmap exports were also visually inspected.

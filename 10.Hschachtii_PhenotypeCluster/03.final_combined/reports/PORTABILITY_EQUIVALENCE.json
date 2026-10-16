@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "sanitised_full_build_verification": "PASS",
+  "common_csv_tables_compared": 48,
+  "comparison_tolerance": {
+    "rtol": 1e-11,
+    "atol": 1e-11
+  },
+  "intentional_changes": [
+    "source_csv values changed from absolute workstation paths to relative logical identifiers",
+    "manifest and run-summary paths serialised relative to output root"
+  ],
+  "source_biological_values_changed": false
+}
